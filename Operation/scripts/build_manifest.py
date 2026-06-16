@@ -46,14 +46,39 @@ def discover_pdfs() -> list[str]:
 
 
 def normalize_filename(name: str) -> str:
-    """Normalize a filename for resilient seed-to-file matching."""
+    """Normalize a filename for resilient seed-to-file matching.
+
+    Strips leading underscores, Arabic numeric prefixes ``(1)``, Roman numeral
+    prefixes ``(II)``, emoji markers ``🗎``, and bracketed tag prefixes such as
+    ``[WP]``, ``[TechDD]``, ``[CIPM]``, ``[VPB]``, ``[LOA]``, ``[INP]``.
+    """
     value = name.lstrip("_").strip()
+    # Strip Arabic prefix: (1), (2), …
     value = re.sub(r"^\(\d+\)\s*(?:🗎\s*)?", "", value)
+    # Strip Roman numeral prefix: (I), (II), (III), (IV), …
+    value = re.sub(r"^\([IVXLCDM]+\)\s*(?:🗎\s*)?", "", value)
+    # Strip bracketed tag prefixes: [WP], [TechDD], [CIPM], …
+    value = re.sub(r"^\[[A-Za-z]+\]\s*", "", value)
     return value
 
 
+def normalize_dir(name: str) -> str:
+    """Normalize a directory name by stripping numeric folder prefixes (``1-``, ``2-``, …)."""
+    return re.sub(r"^\d+-", "", name)
+
+
 def resolve_pdf_path(seed_path: str, available_paths: list[str]) -> str:
-    """Resolve the actual repository path for a seeded manifest entry."""
+    """Resolve the actual repository path for a seeded manifest entry.
+
+    Resolution strategy (deterministic, fail-closed):
+    1. Exact path match.
+    2. Exact filename match (same name, possibly different directory).
+    3. Normalized filename match (strips numeric/Roman/tag prefixes).
+    4. Normalized filename + normalized directory match.
+
+    If more than one candidate exists at any step, the function fails with
+    ``AMBIGUOUS_MATCH`` rather than choosing silently.
+    """
     if seed_path in available_paths:
         return seed_path
 
@@ -61,6 +86,11 @@ def resolve_pdf_path(seed_path: str, available_paths: list[str]) -> str:
     exact_name_matches = [path for path in available_paths if Path(path).name == seed_name]
     if len(exact_name_matches) == 1:
         return exact_name_matches[0]
+    if len(exact_name_matches) > 1:
+        raise SystemExit(
+            f"AMBIGUOUS_MATCH: seeded path {seed_path!r} matched multiple candidates "
+            f"by exact filename: {exact_name_matches}"
+        )
 
     normalized = normalize_filename(seed_name)
     normalized_matches = [
@@ -68,6 +98,30 @@ def resolve_pdf_path(seed_path: str, available_paths: list[str]) -> str:
     ]
     if len(normalized_matches) == 1:
         return normalized_matches[0]
+    if len(normalized_matches) > 1:
+        raise SystemExit(
+            f"AMBIGUOUS_MATCH: seeded path {seed_path!r} matched multiple candidates "
+            f"by normalized filename: {normalized_matches}"
+        )
+
+    # Try normalized filename + normalized directory matching
+    seed_parts = Path(seed_path).parts
+    if len(seed_parts) > 1:
+        seed_dir_norm = normalize_dir(seed_parts[-2])
+        dir_matches = [
+            path
+            for path in available_paths
+            if normalize_filename(Path(path).name) == normalized
+            and len(Path(path).parts) > 1
+            and normalize_dir(Path(path).parts[-2]) == seed_dir_norm
+        ]
+        if len(dir_matches) == 1:
+            return dir_matches[0]
+        if len(dir_matches) > 1:
+            raise SystemExit(
+                f"AMBIGUOUS_MATCH: seeded path {seed_path!r} matched multiple candidates "
+                f"by normalized filename+dir: {dir_matches}"
+            )
 
     raise SystemExit(
         f"Could not uniquely resolve PDF for seeded path {seed_path!r}; "
@@ -162,6 +216,7 @@ def render_sidecar(entry: dict, path: str, raw_url: str, pdf_sha256: str) -> str
     """Render a deterministic text sidecar for a manifest entry."""
     status, body = extract_pdf_body(REPO_ROOT / path, raw_url)
     lines = [
+        "<!-- GENERATED FILE. DO NOT EDIT BY HAND. Run Operation/scripts/build_manifest.py -->",
         "---",
         json_line("id", entry["id"]),
         json_line("title", entry["title"]),

@@ -1,9 +1,10 @@
+<!-- GENERATED FILE. DO NOT EDIT BY HAND. Run Operation/scripts/build_manifest.py -->
 ---
 id: "observer-compiler-wolfram"
 title: "AI as Observer Compiler (from Wolfram's Ruliad to RLA-ECNN)"
 role: "theory_bridge"
-source_path: "(3) AI as Observer Compiler (from Wolfram's Ruliad to RLA-ECNN).pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/%283%29%20AI%20as%20Observer%20Compiler%20%28from%20Wolfram%27s%20Ruliad%20to%20RLA-ECNN%29.pdf"
+source_path: "(III) AI as Observer Compiler (from Wolfram's Ruliad to RLA-ECNN).pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/%28III%29%20AI%20as%20Observer%20Compiler%20%28from%20Wolfram%27s%20Ruliad%20to%20RLA-ECNN%29.pdf"
 source_sha256: "43c8c9171540729e80db7096fbb6962d42d2ec0478e8805724fd4ec0eb61de68"
 extraction_status: "success"
 ---

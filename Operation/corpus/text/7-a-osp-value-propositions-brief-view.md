@@ -1,9 +1,10 @@
+<!-- GENERATED FILE. DO NOT EDIT BY HAND. Run Operation/scripts/build_manifest.py -->
 ---
 id: "7-a-osp-value-propositions-brief-view"
 title: "(7) A-OSP Value Propositions Brief View"
 role: "UNREVIEWED_AUTOSEEDED"
-source_path: "(7) A-OSP Value Propositions Brief View.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/%287%29%20A-OSP%20Value%20Propositions%20Brief%20View.pdf"
+source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(4) [VPB] A-OSP Value Propositions Brief View.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%284%29%20%5BVPB%5D%20A-OSP%20Value%20Propositions%20Brief%20View.pdf"
 source_sha256: "07b7c218df70479579c4dcaeed2705a6081f1cb2c7ec9b27397231f8ffdc37c6"
 extraction_status: "success"
 ---

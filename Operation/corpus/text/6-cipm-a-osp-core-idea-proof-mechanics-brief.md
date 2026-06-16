@@ -1,9 +1,10 @@
+<!-- GENERATED FILE. DO NOT EDIT BY HAND. Run Operation/scripts/build_manifest.py -->
 ---
 id: "6-cipm-a-osp-core-idea-proof-mechanics-brief"
 title: "(6) [CIPM] A-OSP Core Idea & Proof Mechanics Brief"
 role: "UNREVIEWED_AUTOSEEDED"
-source_path: "(6) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/%286%29%20%5BCIPM%5D%20A-OSP%20Core%20Idea%20%26%20Proof%20Mechanics%20Brief.pdf"
+source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(3) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%283%29%20%5BCIPM%5D%20A-OSP%20Core%20Idea%20%26%20Proof%20Mechanics%20Brief.pdf"
 source_sha256: "0d667cacad5daf8d0752091b29b3f26441d922e49648187cb5cf4b0d48d4f1a2"
 extraction_status: "success"
 ---
