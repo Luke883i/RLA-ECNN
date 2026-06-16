@@ -86,6 +86,11 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 | `theory_bridge` | `observer-compiler-wolfram` | `Operation/corpus/text/observer-compiler-wolfram.md` |
 | `theory_bridge` | `wolfram-reply-annex` | `Operation/corpus/text/wolfram-reply-annex.md` |
 | `implementation_architecture` | `aosp-whitepaper` | `Operation/corpus/text/aosp-whitepaper.md` |
+| `implementation_due_diligence` | `aosp-techdd` | `Operation/corpus/text/aosp-techdd.md` |
+| `implementation_proof_mechanics` | `aosp-cipm-proof-mechanics` | `Operation/corpus/text/aosp-cipm-proof-mechanics.md` |
+| `implementation_value_proposition` | `aosp-value-propositions` | `Operation/corpus/text/aosp-value-propositions.md` |
+| `legal_operating_architecture_target` | `aosp-legal-operating-architecture` | `Operation/corpus/text/aosp-legal-operating-architecture.md` |
+| `investment_pitch` | `aosp-investment-pitch` | `Operation/corpus/text/aosp-investment-pitch.md` |
 | `core_paper` | `main-paper-rla-ecnn-crc-pce` | `Operation/corpus/text/main-paper-rla-ecnn-crc-pce.md` |
 | `slidedeck` | `slidedeck-rla-ecnn-pce-bridge` | `Operation/corpus/text/slidedeck-rla-ecnn-pce-bridge.md` |
 | `technical_annex` | `annex-a-rla-crc-foundations` | `Operation/corpus/text/annex-a-rla-crc-foundations.md` |
@@ -95,6 +100,7 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 | `technical_annex` | `annex-e-rla-ecnn-pce-bridge` | `Operation/corpus/text/annex-e-rla-ecnn-pce-bridge.md` |
 | `technical_annex` | `annex-f-proto-epistemic-architectures` | `Operation/corpus/text/annex-f-proto-epistemic-architectures.md` |
 | `methodology_annex` | `annex-g-methodology-experiments` | `Operation/corpus/text/annex-g-methodology-experiments.md` |
+| `bibliography` | `full-apa-bibliografy-corpus-rla-crc-briophita-ecnn-roa` | `Operation/corpus/text/full-apa-bibliografy-corpus-rla-crc-briophita-ecnn-roa.md` |
 
 ## Traversal protocol
 

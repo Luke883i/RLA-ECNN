@@ -52,6 +52,26 @@ from manifest_common import (
 REQUIRED_TOP_KEYS = ["schema_version", "repository", "default_branch", "pdfs"]
 REQUIRED_ENTRY_KEYS = ["id", "title", "role", "path", "raw_url", "text_url", "text_sha256"]
 
+ALLOWED_ROLES = {
+    "main_entrypoint",
+    "humanistic_philosopher_entrypoint",
+    "theory_bridge",
+    "implementation_architecture",
+    "implementation_due_diligence",
+    "implementation_proof_mechanics",
+    "implementation_value_proposition",
+    "legal_operating_architecture_target",
+    "investment_pitch",
+    "core_paper",
+    "slidedeck",
+    "technical_annex",
+    "methodology_annex",
+    "bibliography",
+    "UNREVIEWED_AUTOSEEDED",
+}
+
+GENERATED_HEADER = "<!-- GENERATED FILE. DO NOT EDIT BY HAND. Run Operation/scripts/build_manifest.py -->"
+
 # Agent-facing documents that must not advertise third-party cloud-share links
 # as canonical download sources (the manifest's raw_url is the only canonical
 # acquisition map). Tokens are matched only when they look like a live link.
@@ -105,6 +125,10 @@ def validate(manifest: dict) -> list[str]:
             errors.append(f"[{tag}] duplicate path: {path}")
         seen_paths.add(path)
 
+        role = entry.get("role", "")
+        if role not in ALLOWED_ROLES:
+            errors.append(f"[{tag}] unknown role: {role!r}")
+
         abspath = REPO_ROOT / path
         if not abspath.exists():
             errors.append(f"[{tag}] path does not exist: {path}")
@@ -134,6 +158,11 @@ def validate(manifest: dict) -> list[str]:
             sidecar_data = sidecar_path.read_bytes()
             if not sidecar_data:
                 errors.append(f"[{tag}] text sidecar is empty: {sidecar_rel}")
+            sidecar_text = sidecar_data.decode("utf-8", errors="replace")
+            if not sidecar_text.startswith(GENERATED_HEADER):
+                errors.append(
+                    f"[{tag}] text sidecar missing generated-file header: {sidecar_rel}"
+                )
             digest = hashlib.sha256(sidecar_data).hexdigest()
             if text_sha256 != digest:
                 errors.append(f"[{tag}] text_sha256 mismatch: manifest != file ({digest})")
