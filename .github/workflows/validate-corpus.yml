@@ -1,0 +1,58 @@
+name: Validate corpus alignment
+
+on:
+  pull_request:
+    branches: ["**"]
+    paths:
+      - "**/*.pdf"
+      - "README.md"
+      - "Operation/MANIFEST.json"
+      - "Operation/corpus/text/**"
+      - "Operation/scripts/**"
+      - ".github/workflows/validate-corpus.yml"
+      - ".github/workflows/regenerate-corpus.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-corpus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install corpus dependencies
+        run: python -m pip install -r Operation/requirements-dev.txt
+
+      - name: Check generated manifest and sidecars
+        run: python Operation/scripts/build_manifest.py --check
+
+      - name: Validate manifest offline
+        run: python Operation/scripts/check_manifest.py
+
+      - name: Audit corpus geometry
+        run: python Operation/scripts/audit_corpus_geometry.py --check
+
+      - name: Check README / MANIFEST alignment
+        run: python Operation/scripts/check_readme_manifest_alignment.py
+
+  validate-corpus-online:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install corpus dependencies
+        run: python -m pip install -r Operation/requirements-dev.txt
+
+      - name: Validate manifest online
+        run: python Operation/scripts/check_manifest.py --online

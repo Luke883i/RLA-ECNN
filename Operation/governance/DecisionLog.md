@@ -125,3 +125,29 @@
   `python Operation/scripts/build_manifest.py` / CI path references before
   reopening merge.
 - **export:** artifact_manifest
+
+---
+
+## DEC-0007 — Corpus manifest is the only machine-canonical acquisition map
+
+- **date:** 2026-06-16
+- **decision:** Harden corpus governance: `Operation/MANIFEST.json` is the sole
+  canonical machine-readable corpus-acquisition map. README corpus tables are
+  generated from or checked against the manifest. Generated sidecars
+  (`Operation/corpus/text/*.md`) must not be hand-edited and carry a generated-file
+  header. PDF rename/move/add/delete must be accompanied by manifest regeneration.
+  PRs touching corpus surfaces must pass build/check/audit/alignment gates.
+- **rationale:** After a structural rename (Arabic→Roman prefixes, numbered folder
+  prefixes), MANIFEST.json pointed to stale paths, producing stale `raw_url` and
+  sidecar metadata. An obedient agent following the README→MANIFEST chain would
+  hit DUE-CORPUS-FETCH. Realigning all surfaces and adding drift gates prevents
+  recurrence (antifragile loop).
+- **artifacts:** `Operation/MANIFEST.json` (20 entries, all paths current),
+  `Operation/scripts/build_manifest.py` (Roman/tag/folder normalization,
+  AMBIGUOUS_MATCH fail-closed), `Operation/scripts/check_manifest.py` (role
+  vocabulary, generated-file header check), `Operation/scripts/audit_corpus_geometry.py`,
+  `Operation/scripts/check_readme_manifest_alignment.py`,
+  `.github/workflows/validate-corpus.yml` (PR drift gate).
+- **rollback:** Revert this commit; manifest and sidecars will need manual
+  regeneration via `python Operation/scripts/build_manifest.py`.
+- **export:** artifact_manifest

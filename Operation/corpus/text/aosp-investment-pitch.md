@@ -1,8 +1,8 @@
 <!-- GENERATED FILE. DO NOT EDIT BY HAND. Run Operation/scripts/build_manifest.py -->
 ---
-id: "6-inp-a-osp-investment-pitch"
-title: "(6) [INP] A-OSP Investment Pitch"
-role: "UNREVIEWED_AUTOSEEDED"
+id: "aosp-investment-pitch"
+title: "A-OSP Investment Pitch"
+role: "investment_pitch"
 source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(6) [INP] A-OSP Investment Pitch.pdf"
 source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%286%29%20%5BINP%5D%20A-OSP%20Investment%20Pitch.pdf"
 source_sha256: "b409cb075e6ada20a791bae9a115c6c9f41714c0edcc98a1a1236c59dd6ac670"

@@ -1,8 +1,8 @@
 <!-- GENERATED FILE. DO NOT EDIT BY HAND. Run Operation/scripts/build_manifest.py -->
 ---
-id: "5-loa-legal-operating-architecture-target"
-title: "(5) [LOA] Legal Operating Architecture Target"
-role: "UNREVIEWED_AUTOSEEDED"
+id: "aosp-legal-operating-architecture"
+title: "Legal Operating Architecture Target"
+role: "legal_operating_architecture_target"
 source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(5) [LOA] Legal Operating Architecture Target.pdf"
 source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%285%29%20%5BLOA%5D%20Legal%20Operating%20Architecture%20Target.pdf"
 source_sha256: "8bae97bc6eed895367181a4e426fdb10491eb753eb8df4be8ba5c2e0a9cc07d4"

@@ -240,6 +240,117 @@ class BuildManifestTestCase(unittest.TestCase):
                 any(path.startswith(f"{build_manifest.OPERATION_DIR_NAME}/") for path in paths)
             )
 
+    def test_normalize_filename_roman_prefix(self):
+        self.assertEqual(
+            build_manifest.normalize_filename("(II) ROA - Reticular Observer Architectures.pdf"),
+            "ROA - Reticular Observer Architectures.pdf",
+        )
+        self.assertEqual(
+            build_manifest.normalize_filename("(III) AI as Observer Compiler.pdf"),
+            "AI as Observer Compiler.pdf",
+        )
+
+    def test_normalize_filename_tag_prefix(self):
+        self.assertEqual(
+            build_manifest.normalize_filename("(1) [WP] A-OSP Whitepaper.pdf"),
+            "A-OSP Whitepaper.pdf",
+        )
+        self.assertEqual(
+            build_manifest.normalize_filename("[TechDD] A-OSP Due Diligence.pdf"),
+            "A-OSP Due Diligence.pdf",
+        )
+
+    def test_normalize_dir_strips_numeric_prefix(self):
+        self.assertEqual(build_manifest.normalize_dir("2-RLA-CRC-ECNN"), "RLA-CRC-ECNN")
+        self.assertEqual(build_manifest.normalize_dir("RLA-CRC-ECNN"), "RLA-CRC-ECNN")
+
+    def test_resolve_roman_renamed_root_pdf(self):
+        manifest = manifest_template(
+            [
+                {
+                    "id": "entrypoint",
+                    "title": "Entrypoint",
+                    "role": "main_entrypoint",
+                    "path": "(2) Reticular Observer Architectures (ROA).pdf",
+                }
+            ]
+        )
+        with self.temporary_repo(manifest) as root:
+            write_pdf(root / "(II) Reticular Observer Architectures (ROA).pdf")
+
+            manifest_text, _ = build_manifest.build_outputs()
+            output = json.loads(manifest_text)
+
+            self.assertEqual(1, len(output["pdfs"]))
+            self.assertEqual(
+                "(II) Reticular Observer Architectures (ROA).pdf",
+                output["pdfs"][0]["path"],
+            )
+
+    def test_resolve_folder_prefix_rename(self):
+        manifest = manifest_template(
+            [
+                {
+                    "id": "main-paper",
+                    "title": "Main Paper",
+                    "role": "core_paper",
+                    "path": "RLA-CRC-ECNN/_Main_Paper.pdf",
+                }
+            ]
+        )
+        with self.temporary_repo(manifest) as root:
+            write_pdf(root / "2-RLA-CRC-ECNN" / "_Main_Paper.pdf")
+
+            manifest_text, _ = build_manifest.build_outputs()
+            output = json.loads(manifest_text)
+
+            self.assertEqual(1, len(output["pdfs"]))
+            self.assertEqual(
+                "2-RLA-CRC-ECNN/_Main_Paper.pdf",
+                output["pdfs"][0]["path"],
+            )
+
+    def test_ambiguous_match_fails_closed(self):
+        manifest = manifest_template(
+            [
+                {
+                    "id": "doc",
+                    "title": "Doc",
+                    "role": "core_paper",
+                    "path": "old/doc.pdf",
+                }
+            ]
+        )
+        with self.temporary_repo(manifest) as root:
+            write_pdf(root / "A" / "doc.pdf")
+            write_pdf(root / "B" / "doc.pdf")
+
+            with self.assertRaises(SystemExit) as ctx:
+                build_manifest.build_outputs()
+            self.assertIn("AMBIGUOUS_MATCH", str(ctx.exception))
+
+    def test_sidecar_has_generated_header(self):
+        manifest = manifest_template(
+            [
+                {
+                    "id": "seeded-doc",
+                    "title": "Seeded Doc",
+                    "role": "core_paper",
+                    "path": "seeded.pdf",
+                }
+            ]
+        )
+        with self.temporary_repo(manifest) as root:
+            write_pdf(root / "seeded.pdf")
+
+            _, sidecars = build_manifest.build_outputs()
+            sidecar_text = sidecars["Operation/corpus/text/seeded-doc.md"]
+            self.assertTrue(
+                sidecar_text.startswith(
+                    "<!-- GENERATED FILE. DO NOT EDIT BY HAND."
+                )
+            )
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
