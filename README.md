@@ -1,4 +1,4 @@
-# Reticular Observer Architectures (ROA) for Governable AI-Assisted Work
+# Reticular Observer Architectures for Governable AI-Assisted Work
 
 ---
 <details>
@@ -129,7 +129,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 |
 |   
 |   IMPLEMENTATION WITNESS - MPV/Enterprise candidate webapp
-├──📁 AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)
+├──📁 1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)
 ├── 🗎 (1) [WP] A-OSP Webapp (Augmented Ontological Semantic Platform) WHITEPAPER.pdf
 ├── 🗎 (2) [TechDD] A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology).pdf
 ├── 🗎 (3) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf
@@ -139,7 +139,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 |
 |   
 |   SCIENTIFIC SPINE, SCAFFOLDING, METODOLOGY BACKLOG
-├──📁 RLA-CRC-ECNN
+├──📁 2-RLA-CRC-ECNN
 │   ├── 🗎 _Main_Paper_RLA-ECNN-CRC-PCE.pdf
 │   ├── 🗎 _Slidedeck_RLA-ECNN_bridge_PCE.pdf
 │   ├── 🗎 Annex A - RLA-CRC Foundations.pdf
@@ -151,11 +151,12 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 │   └── 🗎 Annex G - Methodology Experiments.pdf
 |
 |
-├──📁 Reply to Wolfram/
+├──📁 3-Reply to Wolfram Metaphisics Position
 │   └── 🗎 AI as Observer Compiler - ANNEX - reply Wolfram Metaphisics Position through RLA-ECNN.pdf
 |
 |
 |   GITHUB SUPPORT FILES/FOLDERS
+├──📁 .github/workflows
 └──📁 Operation/
     ├── 🗎 AGENTS.md
     ├── 🗎 MANIFEST.json
