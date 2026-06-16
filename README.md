@@ -122,16 +122,23 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 📁 ./root
 ├── 🗎 README.md
 |
-|   Reticular Observer Architectures for Governable AI-Assisted Work
-├── 🗎 (1) Every Map Leaves Something Out.pdf     ➩ [HUMANISTIC & PHILOSOPHER ENTRYPOINT]
-├── 🗎 (2) ROA - Reticular Observer Architectures for Governable AI-Assisted Work.pdf     ➩ [MAIN ENTRYPOINT]
-├── 🗎 (3) AI as Observer Compiler (from Wolfram's Ruliad to RLA-ECNN).pdf
-├── 🗎 (4) [WP] A-OSP Webapp (Augmented Ontological Semantic Platform) WHITEPAPER.pdf
-├── 🗎 (5) [TechDD] A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology).pdf
-├── 🗎 (6) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf
-├── 🗎 (7) A-OSP Value Propositions Brief View.pdf
+|   RETICULAR OBSERVER ARCHITECTURES FOR GOVERNABLE AI-ASSISTED WORK & A EPISTEMIC DEBT THEORY
+├── 🗎 (I) Every Map Leaves Something Out.pdf
+├── 🗎 (II) ROA - Reticular Observer Architectures for Governable AI-Assisted Work.pdf
+├── 🗎 (III) AI as Observer Compiler (from Wolfram's Ruliad to RLA-ECNN).pdf
 |
-|   MAIN THEORETICAL CORPUS
+|   
+|   IMPLEMENTATION WITNESS - MPV/Enterprise candidate webapp
+├──📁 AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)
+├── 🗎 (1) [WP] A-OSP Webapp (Augmented Ontological Semantic Platform) WHITEPAPER.pdf
+├── 🗎 (2) [TechDD] A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology).pdf
+├── 🗎 (3) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf
+├── 🗎 (4) [VPB] A-OSP Value Propositions Brief View.pdf
+├── 🗎 (5) [LOA] Legal Operating Architecture Target
+├── 🗎 (6) [INP] A-OSP Investment Pitch
+|
+|   
+|   SCIENTIFIC SPINE, SCAFFOLDING, METODOLOGY BACKLOG
 ├──📁 RLA-CRC-ECNN
 │   ├── 🗎 _Main_Paper_RLA-ECNN-CRC-PCE.pdf
 │   ├── 🗎 _Slidedeck_RLA-ECNN_bridge_PCE.pdf
@@ -143,9 +150,12 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 │   ├── 🗎 Annex F - Proto-epistemic Architectures.pdf
 │   └── 🗎 Annex G - Methodology Experiments.pdf
 |
+|
 ├──📁 Reply to Wolfram/
 │   └── 🗎 AI as Observer Compiler - ANNEX - reply Wolfram Metaphisics Position through RLA-ECNN.pdf
 |
+|
+|   GITHUB SUPPORT FILES/FOLDERS
 └──📁 Operation/
     ├── 🗎 AGENTS.md
     ├── 🗎 MANIFEST.json
