@@ -169,7 +169,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── 🗎 (III) AI as Observer Compiler (from Wolfram's Ruliad to RLA-ECNN).pdf
 |
 |   
-|   IMPLEMENTATION WITNESS - MPV/Enterprise candidate webapp
+|   IMPLEMENTATION WITNESS - Enterprise candidate webapp
 ├──📁 1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)
 ├── 🗎 (1) [WP] A-OSP Webapp (Augmented Ontological Semantic Platform) WHITEPAPER.pdf
 ├── 🗎 (2) [TechDD] A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology).pdf
