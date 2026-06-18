@@ -175,8 +175,6 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── 🗎 (2) [TechDD] A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology).pdf
 ├── 🗎 (3) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf
 ├── 🗎 (4) [VPB] A-OSP Value Propositions Brief View.pdf
-├── 🗎 (5) [LOA] Legal Operating Architecture Target
-├── 🗎 (6) [INP] A-OSP Investment Pitch
 |
 |   
 |   SCIENTIFIC SPINE, SCAFFOLDING, METODOLOGY BACKLOG
