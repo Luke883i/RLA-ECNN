@@ -84,7 +84,6 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 | `main_entrypoint` | `roa-main-entrypoint` | `Operation/corpus/text/roa-main-entrypoint.md` |
 | `humanistic_philosopher_entrypoint` | `humanistic-philosopher-entrypoint` | `Operation/corpus/text/humanistic-philosopher-entrypoint.md` |
 | `theory_bridge` | `observer-compiler-wolfram` | `Operation/corpus/text/observer-compiler-wolfram.md` |
-| `theory_bridge` | `wolfram-reply-annex` | `Operation/corpus/text/wolfram-reply-annex.md` |
 | `implementation_architecture` | `aosp-whitepaper` | `Operation/corpus/text/aosp-whitepaper.md` |
 | `implementation_due_diligence` | `aosp-techdd` | `Operation/corpus/text/aosp-techdd.md` |
 | `implementation_proof_mechanics` | `aosp-cipm-proof-mechanics` | `Operation/corpus/text/aosp-cipm-proof-mechanics.md` |
@@ -210,7 +209,6 @@ graph TD
     RLA --> G[Annex G: iKant / governance]
 
     WOLFRAM --> OC[AI as Observer Compiler]
-    WOLFRAM --> WR[Wolfram metaphysics reply]
     WOLFRAM --> SD[PCE bridge slide deck]
 
     ROA --> CR[Controlled reification]
@@ -290,7 +288,7 @@ review != approval
 | Scientific modelling case | Annex B | Annex A, main paper |
 | Experiments / prototypes | Annex F | Annex C, Annex E |
 | Governance / compliance | ROA entrypoint | Annex G, A-OSP whitepaper |
-| Wolfram / Ruliad / PCE | Observer Compiler (3) | Wolfram reply, Annex D, slide deck |
+| Wolfram / Ruliad / PCE | Observer Compiler (3) | Annex D, slide deck |
 | Implementation architecture | A-OSP whitepaper (4) | entrypoint, Annex F, Annex G |
 
 
