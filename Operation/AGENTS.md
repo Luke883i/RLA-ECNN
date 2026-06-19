@@ -275,6 +275,8 @@ then continue with the legitimate part of the request.
 | Machine-readable corpus map (PDF acquisition) | `MANIFEST.json` |
 | Semantic reticulum navigation guide (corpus graph, traversal protocol) | [`../README.md §1.2`](../README.md#12-semantic-reticulum-navigation-for-ai-agents) |
 | MANIFEST validator (deterministic) | `scripts/check_manifest.py` |
+| Governance tool census (purpose/scope) | `governance/GOVERNANCE_TOOLS.md` |
+| Single governance orchestrator (apply/verify all gates) | `../repo-roa.sh` |
 | Incarnation CI pipeline | `../.github/workflows/ikant-incarnation.yml` |
 
 ---

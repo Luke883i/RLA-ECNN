@@ -3,9 +3,9 @@
 id: "aosp-cipm-proof-mechanics"
 title: "A-OSP Core Idea & Proof Mechanics Brief"
 role: "implementation_proof_mechanics"
-source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(3) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%283%29%20%5BCIPM%5D%20A-OSP%20Core%20Idea%20%26%20Proof%20Mechanics%20Brief.pdf"
-source_sha256: "0d667cacad5daf8d0752091b29b3f26441d922e49648187cb5cf4b0d48d4f1a2"
+source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(4) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%284%29%20%5BCIPM%5D%20A-OSP%20Core%20Idea%20%26%20Proof%20Mechanics%20Brief.pdf"
+source_sha256: "f59df3ccf18a5d17dc6bd9181a8b5964deb9c5bc06e1cf7e727dc6369b4b90a3"
 extraction_status: "success"
 ---
 
@@ -13,14 +13,13 @@ extraction_status: "success"
 
 A-OSP
 Core Idea & Proof Mechanics Brief
-C I P M  · V3
 How A-OSP turns AI-assisted work into typed, local, receipt-backed and governable evidence.
 A-OSP is not a better answer generator. It is a proof machine around AI work.
 It does not open the black box. It moves the trust boundary outside the model.
 answer_ → atom_ → receipt_
 Companion brief — claims anchored to live repo main@e492290b · June 2026. 
 Deep layers live in the Whitepaper, the Technical Due Diligence and the ROA corpus; this brief points into them instead of repeating them.
-Gianluca Conte · contegianluca@hotmail.com  ·  2026 ·  discussion draft · not legal or financial advice
+Gianluca Conte · contegianluca@hotmail.com  ·  2026 · confidential discussion draft · not legal or financial advice
 A-OSP · Core Idea & Proof Mechanics Brief · CIPM v3 · posture: main@e492290b · June 2026 1
 
 ## Page 2
@@ -35,7 +34,7 @@ with negative tests
 • every claim anchored to a repo path or a corpus section
 I T  D O E S  N O T  C L AI M
 • semantic truth, legal certification, production readiness
-• full D1/retraival_atom_language (EQL) proof-grade before C1 
+• full D1 / EQL (epistemic query language) proof-grade before C1 
 convergence artifacts close
 • that fluent output, confidence, logs or UI green are proof
 CLAIM RULE — every technical statement in this brief carries exactly one status:
@@ -556,7 +555,7 @@ Why does every map need a declared horizon? Every Map Leaves Something Out — h
 What is the full theory behind the architecture? ROA paper · RLA-CRC-ECNN main paper + Annexes A–G
 How does this relate to Wolfram's Ruliad? AI as Observer Compiler (parts 1–2)
 How is the platform architected end to end? [WP] A-OSP Webapp (Augmented Ontological Semantic Platform) WHITEPAPER
-What does the live repo actually prove today? [TechDD] A-OSP Technical Due Diligence v1 — Infrastructure, Runtime, Topology
+What does the live repo actually prove today? [TechDD] A-OSP Technical Due Diligence v1 — Infrastructure, Runtime, Topology 
 What is the partnership / formation frame? AFM — Anchor Formation Memorandum (companion to this brief)
 Whole corpus:
 A-OSP · Core Idea & Proof Mechanics Brief · CIPM v3 · posture: main@e492290b · June 2026 22

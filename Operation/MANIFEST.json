@@ -65,13 +65,13 @@
       "id": "aosp-whitepaper",
       "title": "Augmented Ontological Semantic Platform (A-OSP) Whitepaper",
       "role": "implementation_architecture",
-      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(1) [WP] A-OSP Webapp (Augmented Ontological Semantic Platform) WHITEPAPER.pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%281%29%20%5BWP%5D%20A-OSP%20Webapp%20%28Augmented%20Ontological%20Semantic%20Platform%29%20WHITEPAPER.pdf",
+      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(1)  A-OSP Webapp Whitepaper [WP].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%281%29%20%20A-OSP%20Webapp%20Whitepaper%20%5BWP%5D.pdf",
       "canonical": true,
       "size_bytes": 570324,
       "sha256": "f27584cfc0156ac0000d74c676efa8a81f601aef3fc08eb9be45c07cec8a9e9b",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-whitepaper.md",
-      "text_sha256": "3c022354bf23960b5cc0db7b768139fea5ad302296543497ee772e319d9d65b4"
+      "text_sha256": "d615ff830869ed8fd20a0088df26e7db8d54ad789aedd646fb8458425dd2f4bf"
     },
     {
       "id": "main-paper-rla-ecnn-crc-pce",
@@ -197,13 +197,13 @@
       "id": "aosp-techdd",
       "title": "A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology)",
       "role": "implementation_due_diligence",
-      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(2) [TechDD] A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology).pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%282%29%20%5BTechDD%5D%20A-OSP%20Webapp%20Technical%20Due%20Diligence%20v1%20%28Infrastructure%2C%20Runtime%2C%20Topology%29.pdf",
+      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(2) A-OSP Webapp Technical Due Diligence [TechDD].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%282%29%20A-OSP%20Webapp%20Technical%20Due%20Diligence%20%5BTechDD%5D.pdf",
       "canonical": true,
       "size_bytes": 356103,
       "sha256": "087ffc5597dd61b04d8aab181c920928fee8e998915da472f09575a0fd4a1f37",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-techdd.md",
-      "text_sha256": "8add12e06bc42d0d5a87d95c1d1a6f140dd3cd1b4eb9eec50bbde712d3682117"
+      "text_sha256": "57ce0887e98c3f5ff53e6f18a2a866fdb26a343ca919784fd1c30c67d65e7324"
     },
     {
       "id": "full-apa-bibliografy-corpus-rla-crc-briophita-ecnn-roa",
@@ -221,49 +221,49 @@
       "id": "aosp-cipm-proof-mechanics",
       "title": "A-OSP Core Idea & Proof Mechanics Brief",
       "role": "implementation_proof_mechanics",
-      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(3) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%283%29%20%5BCIPM%5D%20A-OSP%20Core%20Idea%20%26%20Proof%20Mechanics%20Brief.pdf",
+      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(4) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%284%29%20%5BCIPM%5D%20A-OSP%20Core%20Idea%20%26%20Proof%20Mechanics%20Brief.pdf",
       "canonical": true,
-      "size_bytes": 504169,
-      "sha256": "0d667cacad5daf8d0752091b29b3f26441d922e49648187cb5cf4b0d48d4f1a2",
+      "size_bytes": 494795,
+      "sha256": "f59df3ccf18a5d17dc6bd9181a8b5964deb9c5bc06e1cf7e727dc6369b4b90a3",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-cipm-proof-mechanics.md",
-      "text_sha256": "9e4465dbe33208e20c59232b25f5cb7112fccafac3a5f08bc2cc2cf83fe12ffc"
+      "text_sha256": "f39e8bb623915050b213ffdfdf2b0761e2b0b68c0bd90780f80f30e06259b092"
     },
     {
       "id": "aosp-value-propositions",
       "title": "A-OSP Value Propositions Brief View",
       "role": "implementation_value_proposition",
-      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(4) [VPB] A-OSP Value Propositions Brief View.pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%284%29%20%5BVPB%5D%20A-OSP%20Value%20Propositions%20Brief%20View.pdf",
+      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(3) A-OSP Value Propositions Brief View [VPB].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%283%29%20A-OSP%20Value%20Propositions%20Brief%20View%20%5BVPB%5D.pdf",
       "canonical": true,
       "size_bytes": 668527,
       "sha256": "07b7c218df70479579c4dcaeed2705a6081f1cb2c7ec9b27397231f8ffdc37c6",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-value-propositions.md",
-      "text_sha256": "d47fb5f3527266f826c1c8a733c6576760477889d9944335507bfa7c60f66aba"
+      "text_sha256": "5864308d18509c14f2d5d1573b9d05e6581ca78c1eb7e9bd5d7d8d9dc933570b"
     },
     {
       "id": "aosp-legal-operating-architecture",
       "title": "Legal Operating Architecture Target",
       "role": "legal_operating_architecture_target",
-      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(5) [LOA] Legal Operating Architecture Target.pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%285%29%20%5BLOA%5D%20Legal%20Operating%20Architecture%20Target.pdf",
+      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(5) A-OSP Legal Operating Architecture Target [LOA].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%285%29%20A-OSP%20Legal%20Operating%20Architecture%20Target%20%5BLOA%5D.pdf",
       "canonical": true,
-      "size_bytes": 327021,
-      "sha256": "8bae97bc6eed895367181a4e426fdb10491eb753eb8df4be8ba5c2e0a9cc07d4",
+      "size_bytes": 358183,
+      "sha256": "f2ebcd99421117364eb0461c33e2889f14bc1d85b4b11bb7a81f46f21afa2bc9",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-legal-operating-architecture.md",
-      "text_sha256": "36a6854b352892f8896cdfbce9fdb98e77985db881b3a98014e2e83d33091abd"
+      "text_sha256": "8ff5e2767168b83f1cd6c7be7a605560744203fa0cf4f71c1807c9af39e47a27"
     },
     {
       "id": "aosp-investment-pitch",
       "title": "A-OSP Investment Pitch",
       "role": "investment_pitch",
-      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(6) [INP] A-OSP Investment Pitch.pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%286%29%20%5BINP%5D%20A-OSP%20Investment%20Pitch.pdf",
+      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(6) A-OSP Investment Pitch [INP].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%286%29%20A-OSP%20Investment%20Pitch%20%5BINP%5D.pdf",
       "canonical": true,
-      "size_bytes": 371480,
-      "sha256": "6b2292a7f96338715cca72aec98587779d37d1b0f1f8c7b0926a00d522ae607d",
+      "size_bytes": 948312,
+      "sha256": "af195cef64fde7d8a7083571f797a5efebd72e99114a7a40d2c6ce91f516aea2",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-investment-pitch.md",
-      "text_sha256": "589cbed265f8b359e8dfeb69ff42d574824b4a0529e71ac27ebc042aac3f6ec7"
+      "text_sha256": "8f2afa7dedfa59add66a8862f8d67f8eb5cc4134070e633cf970e4682b1b77b1"
     }
   ]
 }
