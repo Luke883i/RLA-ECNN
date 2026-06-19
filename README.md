@@ -155,9 +155,10 @@ bounded material -> observer structure -> typed artefacts -> validation state ->
 The corpus is programmatic and criticisable. It does **not** claim completed mathematical proof, empirical validation, production readiness, legal certification, or artificial consciousness. Its aim is narrower: to make AI-assisted work horizon-relative, falsifiable, debt-aware, reification-aware, and governable.
 
 Suggested reading pathways:
-For CTOs, engineers, and technical readers: (II), (1), (2), (3), (4)
-For investors, backers, supporters, legals: (I), (5), (6)
-For humanists, philosophers, and intellectually curious readers: (I), (II), (III), _Main_Paper_RLA-ECNN-CRC-PCE, (1)
+
+- For CTOs, engineers, and technical readers: (II), (1), (2), (3), (4)
+- For investors, backers, supporters, legals: (I), (5), (6)
+- For humanists, philosophers, and intellectually curious readers: (I), (II), (III), _Main_Paper_RLA-ECNN-CRC-PCE, (1)
 
 ## Repository hierarchy
 
