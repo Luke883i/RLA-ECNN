@@ -163,13 +163,11 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 🗂️ ./root
 ├── 📑 README.md
 |
-|   RETICULAR OBSERVER ARCHITECTURES FOR GOVERNABLE AI-ASSISTED WORK & A EPISTEMIC DEBT THEORY
 ├── 📑 (I) Every Map Leaves Something Out.pdf
 ├── 📑 (II) ROA - Reticular Observer Architectures for Governable AI-Assisted Work.pdf
 ├── 📑 (III) AI as Observer Compiler - From Wolfram's Ruliad to RLA-ECNN.pdf
-|
-|   
-|   IMPLEMENTATION WITNESS - Enterprise candidate webapp
+|  
+|   IMPLEMENTATION WITNESS - Enterprise Webapp candidate
 ├──🗂️ 1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)
 |   INTRODUCTION/BRIEF VIEW
 ├── 📑 (1) A-OSP Value Propositions Brief View [VPB].pdf
@@ -181,33 +179,15 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── 📑 (5) A-OSP Legal Operating Architecture Target [LOA].pdf
 ├── 📑 (6) A-OSP Investment Pitch [INP].pdf
 |
-|
 |   SCIENTIFIC SPINE, METODOLOGY SCAFFOLDING/BACKLOG
 ├──🗂️ 2-RLA-CRC-ECNN
 │   ├── 📑 _Main_Paper_RLA-ECNN-CRC-PCE.pdf
 │   ├── 📑 _Slidedeck_RLA-ECNN_bridge_PCE.pdf
-│   ├── 📑 Annex A - RLA-CRC Foundations.pdf
-│   ├── 📑 Annex B - RLA biological Case Bryophyte.pdf
-│   ├── 📑 Annex C - ECNN Formalisation.pdf
-│   ├── 📑 Annex D - Epistemic LLM neuron ECU-UC Specification.pdf
-│   ├── 📑 Annex E - RLA-ECNN bridge PCE.pdf
-│   ├── 📑 Annex F - Proto-epistemic Architectures.pdf
-│   └── 📑 Annex G - Methodology Experiments.pdf
-|
-|
-├──🗂️ 3-Reply to Wolfram Metaphisics Position
-│   └── 📑 AI as Observer Compiler - ANNEX - reply Wolfram Metaphisics Position through RLA-ECNN.pdf
-|
+│   ├── 📑 Annex A - G (RLA-CRC Foundations, Case Bryophyte, ECNN Formalisation, Epistemic LLM neuron ECU, RLA-ECNN bridge PCE)
 |
 |   GITHUB OPERATION/SUPPORT FILES/FOLDERS (No Scientific Claims)
 ├──🗂️ .github/workflows
-└──🗂️ Operation/
-    ├── 📑 AGENTS.md
-    ├── 📑 MANIFEST.json
-    ├── 📑 requirements-dev.txt
-    ├──🗂️ governance/
-    ├──🗂️ corpus/text/
-    └──🗂️ scripts/
+└──🗂️ Operation/ (AGENTS.md, MANIFEST.jsn,...)
 ```
 <details>
   <summary>Corpus map</summary>
