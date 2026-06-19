@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #
+# >>> USAGE
 # repo-roa.sh — single governance orchestrator for the ROA repository.
 #
 # Purpose
@@ -26,6 +27,7 @@
 #   -h, --help    Show this help and exit.
 #
 # Exit code is 0 only if every gate passes.
+# <<< USAGE
 
 set -euo pipefail
 
@@ -41,7 +43,10 @@ ONLINE=0
 INSTALL=1
 
 usage() {
-  sed -n '2,38p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'
+  # Print the contiguous comment header between the USAGE markers below.
+  sed -n '/^# >>> USAGE/,/^# <<< USAGE/p' "${BASH_SOURCE[0]}" \
+    | grep -v -e '^# >>> USAGE' -e '^# <<< USAGE' \
+    | sed 's/^# \{0,1\}//'
 }
 
 for arg in "$@"; do
