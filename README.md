@@ -154,9 +154,12 @@ bounded material -> observer structure -> typed artefacts -> validation state ->
 
 The corpus is programmatic and criticisable. It does **not** claim completed mathematical proof, empirical validation, production readiness, legal certification, or artificial consciousness. Its aim is narrower: to make AI-assisted work horizon-relative, falsifiable, debt-aware, reification-aware, and governable.
 
+Suggested reading pathways:
+For CTOs, engineers, and technical readers: (II), (1), (2), (3), (4)
+For investors, backers, supporters, legals: (I), (5), (6)
+For humanists, philosophers, and intellectually curious readers: (I), (II), (III), _Main_Paper_RLA-ECNN-CRC-PCE, (1)
 
-
-## Repository hierarchy and reading order
+## Repository hierarchy
 
 ```text
 
@@ -169,13 +172,10 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 |  
 |   IMPLEMENTATION WITNESS - Enterprise Webapp candidate
 ├──🗂️ 1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)
-|   INTRODUCTION/BRIEF VIEW
 ├── 📑 (1) A-OSP Value Propositions Brief View [VPB].pdf
 ├── 📑 (2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf
-|   WHITEPAPER, TECHNICAL DUE DILIGENCE
 ├── 📑 (3) A-OSP Webapp Whitepaper [WP].pdf
 ├── 📑 (4) A-OSP Webapp Technical Due Diligence [TechDD].pdf
-|   STRUCTURE & GOVERNANCE VISION, INVESTIMENT PITCH
 ├── 📑 (5) A-OSP Legal Operating Architecture Target [LOA].pdf
 ├── 📑 (6) A-OSP Investment Pitch [INP].pdf
 |
@@ -186,8 +186,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 │   ├── 📑 Annex A - G (RLA-CRC Foundations, Case Bryophyte, ECNN Formalisation, Epistemic LLM neuron ECU, RLA-ECNN bridge PCE)
 |
 |   GITHUB OPERATION/SUPPORT FILES/FOLDERS (No Scientific Claims)
-├──🗂️ .github/workflows
-└──🗂️ Operation/ (AGENTS.md, MANIFEST.jsn,...)
+├──🗂️ .github/workflows | 🗂️ Operation/ (AGENTS.md, MANIFEST.jsn,...)
 ```
 <details>
   <summary>Corpus map</summary>
