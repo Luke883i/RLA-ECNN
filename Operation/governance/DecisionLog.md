@@ -151,3 +151,28 @@
 - **rollback:** Revert this commit; manifest and sidecars will need manual
   regeneration via `python Operation/scripts/build_manifest.py`.
 - **export:** artifact_manifest
+
+---
+
+## DEC-0008 — Single governance orchestrator (`repo-roa.sh`) + A-OSP realignment
+
+- **date:** 2026-06-19
+- **decision:** Add one repo-root orchestrator, `repo-roa.sh`, that APPLIES (or,
+  with `--check`, VERIFIES) every documentation-alignment gate in order: corpus
+  map + sidecar regeneration → manifest validation → geometry audit →
+  README/MANIFEST alignment → iKant incarnation. Census every governance tool by
+  purpose/scope in `governance/GOVERNANCE_TOOLS.md`. The orchestrator adds no new
+  policy; each wrapped script stays independently runnable and CI-enforced.
+- **rationale:** The six A-OSP PDFs were renamed (tag moved to suffix, `(3)`/`(4)`
+  reordered), but `MANIFEST.json` seed paths stayed stale. `build_manifest.py`
+  could not resolve them (new tag-suffix naming defeats prefix normalization), so
+  the corpus, raw_url/text_url and sidecars drifted and an obedient agent would
+  hit DUE-CORPUS-FETCH. Realigning the seed paths and re-running the full gate
+  chain via one command makes "align everything" a single, reproducible action
+  (minima spesa, massima resa; antifragile loop per DEC-0007).
+- **artifacts:** `repo-roa.sh`, `Operation/governance/GOVERNANCE_TOOLS.md`,
+  realigned `Operation/MANIFEST.json` (6 A-OSP `path` fields) + regenerated
+  `Operation/corpus/text/aosp-*.md` sidecars.
+- **rollback:** Revert this commit; restore prior seed paths and regenerate via
+  `python Operation/scripts/build_manifest.py`.
+- **export:** artifact_manifest
