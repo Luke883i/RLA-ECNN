@@ -182,18 +182,6 @@
       "text_sha256": "83e439245251a1305aa2096eed817ea3009d74685f140bf7be23ba8562dfd076"
     },
     {
-      "id": "wolfram-reply-annex",
-      "title": "AI as Observer Compiler - ANNEX - reply Wolfram Metaphysics Position through RLA-ECNN",
-      "role": "theory_bridge",
-      "path": "3-Reply to Wolfram Metaphisics Position/AI as Observer Compiler - ANNEX - reply Wolfram Metaphisics Position through RLA-ECNN.pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/3-Reply%20to%20Wolfram%20Metaphisics%20Position/AI%20as%20Observer%20Compiler%20-%20ANNEX%20-%20reply%20Wolfram%20Metaphisics%20Position%20through%20RLA-ECNN.pdf",
-      "canonical": true,
-      "size_bytes": 394706,
-      "sha256": "c85fadc60c7f3e5edd6aec01abe29cea6c240913168fa3ad7c25076e0398e23b",
-      "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/wolfram-reply-annex.md",
-      "text_sha256": "2c5aaf8706179485f55a90fb5d42b1b62da9067bf507f0732b307659b0143036"
-    },
-    {
       "id": "aosp-techdd",
       "title": "A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology)",
       "role": "implementation_due_diligence",
