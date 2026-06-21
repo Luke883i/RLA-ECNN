@@ -89,7 +89,6 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 | `implementation_proof_mechanics` | `aosp-cipm-proof-mechanics` | `Operation/corpus/text/aosp-cipm-proof-mechanics.md` |
 | `implementation_value_proposition` | `aosp-value-propositions` | `Operation/corpus/text/aosp-value-propositions.md` |
 | `legal_operating_architecture_target` | `aosp-legal-operating-architecture` | `Operation/corpus/text/aosp-legal-operating-architecture.md` |
-| `investment_pitch` | `aosp-investment-pitch` | `Operation/corpus/text/aosp-investment-pitch.md` |
 | `core_paper` | `main-paper-rla-ecnn-crc-pce` | `Operation/corpus/text/main-paper-rla-ecnn-crc-pce.md` |
 | `slidedeck` | `slidedeck-rla-ecnn-pce-bridge` | `Operation/corpus/text/slidedeck-rla-ecnn-pce-bridge.md` |
 | `technical_annex` | `annex-a-rla-crc-foundations` | `Operation/corpus/text/annex-a-rla-crc-foundations.md` |
@@ -172,7 +171,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 Suggested reading pathways:
 ```text
 - CTOs, engineers, technical readers: (II) > (1) > (2) > (3) > (4)
-- Investors, backers, supporters, legals: (I) > (5) > (6)
+- Investors, backers, supporters, legals: (I) > (5)
 - Humanists, philosophers: (I) > (II) > (III) > RLA/CRC/ECNN Corpus > (1)
 ```
 
@@ -195,7 +194,6 @@ Suggested reading pathways:
 ├── 📑 (3) A-OSP Webapp Whitepaper [WP].pdf
 ├── 📑 (4) A-OSP Webapp Technical Due Diligence [TechDD].pdf
 ├── 📑 (5) A-OSP Legal Operating Architecture Target [LOA].pdf
-├── 📑 (6) A-OSP Investment Pitch [INP].pdf
 |
 |   SCIENTIFIC SPINE, METODOLOGY SCAFFOLDING/BACKLOG
 ├──🗂️ 2-RLA-CRC-ECNN

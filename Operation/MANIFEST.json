@@ -240,18 +240,6 @@
       "sha256": "f2ebcd99421117364eb0461c33e2889f14bc1d85b4b11bb7a81f46f21afa2bc9",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-legal-operating-architecture.md",
       "text_sha256": "8ff5e2767168b83f1cd6c7be7a605560744203fa0cf4f71c1807c9af39e47a27"
-    },
-    {
-      "id": "aosp-investment-pitch",
-      "title": "A-OSP Investment Pitch",
-      "role": "investment_pitch",
-      "path": "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(6) A-OSP Investment Pitch [INP].pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%286%29%20A-OSP%20Investment%20Pitch%20%5BINP%5D.pdf",
-      "canonical": true,
-      "size_bytes": 948312,
-      "sha256": "af195cef64fde7d8a7083571f797a5efebd72e99114a7a40d2c6ce91f516aea2",
-      "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-investment-pitch.md",
-      "text_sha256": "8f2afa7dedfa59add66a8862f8d67f8eb5cc4134070e633cf970e4682b1b77b1"
     }
   ]
 }
