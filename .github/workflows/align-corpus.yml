@@ -1,0 +1,62 @@
+name: Align ROA corpus (daily)
+
+# Run the single governance orchestrator (./repo-roa.sh) once a day in APPLY
+# mode so the corpus map (Operation/MANIFEST.json), the generated text sidecars,
+# the README semantic reticulum, and the iKant agentification contract stay
+# mutually consistent. Any resulting changes are committed and pushed back to
+# the default branch. Can also be triggered manually via workflow_dispatch.
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # every day at 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: align-roa
+  cancel-in-progress: true
+
+jobs:
+  align:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('Operation/requirements-dev.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Make repo-roa.sh executable
+        run: chmod +x ./repo-roa.sh
+
+      - name: Run repo-roa (apply mode)
+        run: ./repo-roa.sh
+
+      - name: Commit and push changes (if any)
+        run: |
+          status="$(git status --porcelain)"
+          if [ -z "$status" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(ci): automatic corpus alignment (repo-roa) [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
