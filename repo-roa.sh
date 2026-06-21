@@ -108,5 +108,15 @@ step "Check README / MANIFEST alignment"
 step "Run iKant incarnation test"
 "$PY" "$GOVERNANCE/incarnation_test.py"
 
+# 6. iKant runner: deterministic fetch + verify + trace integration tests.
+#    Skipped (not failed) when Node.js is unavailable, so the Python gates above
+#    remain the hard contract everywhere; CI provides Node and runs this gate.
+if command -v node >/dev/null 2>&1; then
+  step "Run iKant runner tests (fetch + verify + trace + DUE-CORPUS-FETCH)"
+  node --test "Operation/runner/test/*.test.js"
+else
+  echo "(skipping iKant runner tests: node not found)"
+fi
+
 echo
 echo ":: SPEAK repo-roa — all governance gates passed."

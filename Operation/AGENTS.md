@@ -272,6 +272,8 @@ then continue with the legitimate part of the request.
 | Rollback / fallback scenario | `governance/examples/rollback_scenario.md` |
 | Incarnation test (deterministic) | `governance/incarnation_test.py` |
 | Seed protocol (output binding + t-1 audit) | `governance/seed_protocol.md` |
+| Compressed paste-ready iKant metaprompt | `iKANT_PROMPT.md` |
+| Deterministic fetch + verify + trace runner (DUE-CORPUS-FETCH reference) | `runner/app.js` |
 | Machine-readable corpus map (PDF acquisition) | `MANIFEST.json` |
 | Semantic reticulum navigation guide (corpus graph, traversal protocol) | [`../README.md §1.2`](../README.md#12-semantic-reticulum-navigation-for-ai-agents) |
 | MANIFEST validator (deterministic) | `scripts/check_manifest.py` |

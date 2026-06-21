@@ -69,6 +69,36 @@ failed_surface:
 
 Do not invent replacement paths.
 
+## AI Agent Quick Bootstrap
+
+Minimal, paste-ready entrypoint for an agent or CLI. The full binding stays in
+`Operation/AGENTS.md`; this is the compressed handle.
+
+1. Fetch `Operation/AGENTS.md` and `Operation/MANIFEST.json` (canonical raw URLs above).
+2. Resolve each document by `id`/`role`; read its `text_url` sidecar, fall back to `raw_url`.
+3. Verify integrity: sha256 of the fetched bytes must match `text_sha256` / `sha256`.
+4. On any missing or mismatched surface, emit `DUE-CORPUS-FETCH` and abort that claim — never invent paths.
+5. Attach to every claim: `id`, `source_url`, verified `sha256`, epistemic state, ≤3 reasoning steps.
+
+The canonical compressed metaprompt lives in
+[`Operation/iKANT_PROMPT.md`](Operation/iKANT_PROMPT.md) (paste-ready iKant
+prompt + field reference + DUE-CORPUS-FETCH shape).
+
+A deterministic, dependency-free reference implementation of the fetch + verify +
+trace + DUE-CORPUS-FETCH flow lives in
+[`Operation/runner/`](Operation/runner/) (Node.js standard library only):
+
+```bash
+node Operation/runner/app.js --id roa-main-entrypoint   # trace one document
+node Operation/runner/app.js --all                      # trace every entry
+node --test "Operation/runner/test/*.test.js"           # integration tests
+```
+
+By default the runner resolves manifest URLs to local repository files
+(deterministic, offline); pass `--online` to fetch from
+`raw.githubusercontent.com`. `./repo-roa.sh --check` runs these runner tests when
+Node.js is available.
+
 ## Semantic reticulum navigation
 
 The corpus is a **typed graph**. Documents are nodes identified by `id` and `role`; reading order and cross-reference form the edges.

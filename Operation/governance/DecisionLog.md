@@ -176,3 +176,36 @@
 - **rollback:** Revert this commit; restore prior seed paths and regenerate via
   `python Operation/scripts/build_manifest.py`.
 - **export:** artifact_manifest
+
+---
+
+## DEC-0009 — Canonical iKant metaprompt + deterministic fetch/verify/trace runner
+
+- **date:** 2026-06-21
+- **decision:** Add a canonical, compressed paste-ready metaprompt
+  (`Operation/iKANT_PROMPT.md`) as a derived minimal view of `AGENTS.md`, plus a
+  deterministic, dependency-free Node.js reference runner (`Operation/runner/`:
+  `app.js`, `package.json`, `Dockerfile`, `test/`). The runner resolves a corpus
+  document by `id`/`role` from `Operation/MANIFEST.json`, prefers `text_url` then
+  falls back to `raw_url`, verifies sha256 against the manifest, and emits either
+  a traced result or a verbatim `DUE-CORPUS-FETCH` report (offline-by-default;
+  `--online` fetches over HTTPS). Wire its integration tests into `repo-roa.sh`
+  (skipped when Node.js is absent) and a CI gate
+  (`.github/workflows/ikant-runner.yml`). The metaprompt and runner add no new
+  policy; on conflict `AGENTS.md` and this DecisionLog win.
+- **rationale:** The AGENTS.md acquisition rule (§4.1: prefer `text_url`, fall
+  back to `raw_url`, report `DUE-CORPUS-FETCH` on failure) was specified in prose
+  and Python manifest gates but had no executable, language-agnostic witness an
+  external agent could run. An obedient agent could still mis-handle the fallback
+  order or skip integrity verification silently. A minimal stdlib-only runner
+  turns the contract into a deterministic, testable reference, and the
+  DUE-CORPUS-FETCH fixture converts the fetch-failure path into a permanent
+  regression test (minima spesa, massima resa; antifragile loop per DEC-0007).
+- **artifacts:** `Operation/iKANT_PROMPT.md`, `Operation/runner/app.js`,
+  `Operation/runner/package.json`, `Operation/runner/Dockerfile`,
+  `Operation/runner/test/runner.test.js`, `.github/workflows/ikant-runner.yml`,
+  `repo-roa.sh` (step 6 runner gate), `Operation/governance/GOVERNANCE_TOOLS.md`,
+  `Operation/AGENTS.md` §6 (MDAS map), `README.md` (AI Agent Quick Bootstrap).
+- **rollback:** Revert this commit; the metaprompt and runner are additive and
+  carry no manifest/sidecar state, so no regeneration is required.
+- **export:** artifact_manifest
