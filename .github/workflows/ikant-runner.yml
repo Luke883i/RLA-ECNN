@@ -39,4 +39,6 @@ jobs:
           node-version: "20"
 
       - name: Run iKant runner tests
-        run: node --test "Operation/runner/test/*.test.js"
+        # Let the shell expand the glob so the gate is portable across Node
+        # versions (Node < 21 does not expand glob patterns inside --test).
+        run: node --test Operation/runner/test/*.test.js

@@ -113,7 +113,9 @@ step "Run iKant incarnation test"
 #    remain the hard contract everywhere; CI provides Node and runs this gate.
 if command -v node >/dev/null 2>&1; then
   step "Run iKant runner tests (fetch + verify + trace + DUE-CORPUS-FETCH)"
-  node --test "Operation/runner/test/*.test.js"
+  # Shell-expand the glob: portable across Node versions (Node < 21 does not
+  # expand glob patterns passed to --test).
+  node --test Operation/runner/test/*.test.js
 else
   echo "(skipping iKant runner tests: node not found)"
 fi

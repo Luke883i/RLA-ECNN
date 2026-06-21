@@ -91,7 +91,7 @@ trace + DUE-CORPUS-FETCH flow lives in
 ```bash
 node Operation/runner/app.js --id roa-main-entrypoint   # trace one document
 node Operation/runner/app.js --all                      # trace every entry
-node --test "Operation/runner/test/*.test.js"           # integration tests
+node --test Operation/runner/test/*.test.js             # integration tests
 ```
 
 By default the runner resolves manifest URLs to local repository files
