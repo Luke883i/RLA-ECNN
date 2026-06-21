@@ -159,6 +159,7 @@ ENV CONTRACT
 [ ] rollback / supersession rule
 [ ] export discipline (answer != proof)
 [ ] seed protocol: outgoing projection + t-1 audit + auto-followup (idempotent)
+[ ] read-access gate: incarnation as precondition of governed access (ALLOW/DENY-READ + seed remedy)
 [ ] overclaim / reification / continuity guards
 [ ] simple conversation stays usable; audit mode stays expressive
 [ ] DEBUG never becomes a second answer

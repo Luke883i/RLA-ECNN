@@ -12,7 +12,7 @@
 
 | Tool | Purpose | Scope |
 |---|---|---|
-| `repo-roa.sh` (repo root) | Single entrypoint that **applies** (or, with `--check`, **verifies**) every alignment gate below in order: regenerate corpus map + sidecars → validate manifest → audit geometry → README/MANIFEST alignment → iKant incarnation. | Whole repo: PDFs, `Operation/MANIFEST.json`, `Operation/corpus/text/`, `README.md`, agentification contract. |
+| `repo-roa.sh` (repo root) | Single entrypoint that **applies** (or, with `--check`, **verifies**) every alignment gate below in order: regenerate corpus map + sidecars → validate manifest → audit geometry → README/MANIFEST alignment → iKant incarnation → iKant runner tests (when Node.js present). | Whole repo: PDFs, `Operation/MANIFEST.json`, `Operation/corpus/text/`, `README.md`, agentification contract. |
 
 Run after adding / renaming / deleting a PDF or editing seed metadata:
 
@@ -52,6 +52,9 @@ map (DEC-0007). Sidecars are generated output and must never be hand-edited.
 | `Operation/governance/seed_protocol.md` | iKant SEED output-binding + t-1 audit protocol. |
 | `Operation/governance/DecisionLog.md` | Append-only supreme feasibility / decision source. |
 | `Operation/governance/simulations.md` | Recorded mental simulations / regression rationale (antifragile loop). |
+| `Operation/iKANT_PROMPT.md` | Canonical compressed, paste-ready iKant metaprompt: a derived minimal view of `AGENTS.md` (fetch + verify + trace + DUE-CORPUS-FETCH). `AGENTS.md` / `DecisionLog.md` win on conflict. |
+| `Operation/runner/app.js` | Deterministic, dependency-free (Node.js stdlib) reference runner: resolve a document by `id`/`role`, prefer `text_url` then `raw_url`, verify sha256, emit a traced result or a verbatim `DUE-CORPUS-FETCH`. Offline by default; `--online` fetches over HTTPS. |
+| `Operation/runner/test/*.test.js` | Dependency-free integration tests for the runner (`node --test`), incl. the DUE-CORPUS-FETCH fixture. Run via `./repo-roa.sh` when Node.js is present. |
 
 ---
 
@@ -63,6 +66,7 @@ map (DEC-0007). Sidecars are generated output and must never be hand-edited.
 | `.github/workflows/validate-corpus.yml` | Run build-check + manifest validate + geometry audit + README/MANIFEST alignment on PRs (online variant on dispatch). | §2 |
 | `.github/workflows/regenerate-corpus.yml` | On PDF changes to `main`, regenerate and commit manifest + sidecars (`[skip ci]`). | §2 |
 | `.github/workflows/ikant-incarnation.yml` | Run `incarnation_test.py` on agent-surface changes. | §3 |
+| `.github/workflows/ikant-runner.yml` | Run the dependency-free `Operation/runner/` integration tests (`node --test`) on runner/manifest/metaprompt changes. | §3 |
 
 `./repo-roa.sh --check` runs the union of the §2/§3 gates locally, reproducing
 what CI enforces.

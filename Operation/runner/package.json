@@ -1,0 +1,21 @@
+{
+  "name": "ikant-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deterministic, dependency-free iKant runner: fetch + verify + trace ROA corpus documents from Operation/MANIFEST.json (mirrors Operation/iKANT_PROMPT.md and AGENTS.md §4.1).",
+  "license": "SEE LICENSE IN ../../README.md",
+  "type": "commonjs",
+  "main": "app.js",
+  "bin": {
+    "ikant-runner": "app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

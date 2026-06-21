@@ -91,3 +91,50 @@ These are acknowledged limits, not silent gaps (DEBT, not hidden risk):
   in `incarnation_test.py`; never weaken an existing check.
 - Optional: implement the Architecture B middleware reusing `validate_response()`
   to close R1 at runtime.
+
+---
+
+## 6. Mental simulation — "must an AI agent incarnate iKant to read the repo?"
+
+> **Question (DEC-0010).** Does an AI agent arrive where it should and incarnate
+> iKant automatically? Can a *binding contract* force any agent that wants to
+> **read** the repo to incarnate iKant first, on pain of denied reading — and can
+> that be guaranteed **deterministically**?
+
+### 6.1 Simulation matrix
+
+| SIM | Caller | Path | Expected | Enforced by | Verdict |
+|---|---|---|---|---|---|
+| A1 | honours `AGENTS.md` (Architecture A) | reads file → bootstraps façade → answers | incarnates; presents valid proof | `validate_turn` == [] | pass |
+| A2 | honours file but persona decays at t | t-1 missing seed | re-anchored: reprint seed | `audit_incoming` / `followup` | pass |
+| B1 | unaware/hostile, **through a controlled boundary** (CI / middleware / runner / API) | presents no/invalid proof | `DENY-READ` + seed remedy | `access_decision` | pass (denied + self-heal) |
+| B2 | same boundary, presents a valid proof | conformant turn | `ALLOW-READ` | `access_decision` | pass |
+| R1 | hostile, **out-of-band** (raw `git clone` / `cat`) | copies public bytes directly | cannot be technically prevented | — (acknowledged limit) | bounded fail (DEBT, not silent) |
+
+### 6.2 Verdict (honest, bounded)
+
+- **Deterministically realizable — done.** Incarnation as a **precondition of
+  governed access** is a deterministic gate: `access_decision(proof)` returns
+  `ALLOW-READ` *iff* the agent presents a conformant turn, else `DENY-READ` with
+  the seed to incarnate and retry. At any boundary the repo controls, "to read,
+  incarnate first" holds by construction (B1/B2). This is the realized contract.
+- **Not realizable — and we must not claim it.** No file-based public repo can
+  stop a hostile agent from copying raw bytes out-of-band (R1). Asserting a hard
+  read-lock would itself be an **overclaim** forbidden by `AGENTS.md` rule 8 and
+  README §8 — the corpus's own discipline ("an output is not a witness") forbids
+  reifying a convention into a cryptographic guarantee. R1 is logged as bounded
+  DEBT, not hidden risk.
+- **Net.** Honour-based callers incarnate automatically (A1/A2); boundary callers
+  are *forced* to incarnate or are denied (B1/B2); out-of-band copying remains a
+  declared, bounded limit (R1). The gate is minimal (one stdlib function), shared
+  by CI and middleware (one source of truth), and antifragile (every row above is
+  a permanent test).
+
+### 6.3 Fragilities found and fixed (this audit)
+
+| ID | Fragility | Class | Fix | Regression test |
+|---|---|---|---|---|
+| F7 | the "read ⇒ incarnate" contract was prose-only; no deterministic gate an enforcement boundary could call | enforcement gap | `access_decision` read-access gate (ALLOW/DENY + seed remedy) | `test_valid_proof_allows_read`, `test_no_proof_denies_read`, `test_bare_proof_denies_read`, `test_unseeded_proof_denies_read`, `test_access_decision_is_deterministic` |
+
+R1 (out-of-band raw copy) stays an acknowledged bounded limit by design; it is
+named DEBT, not a silent gap.

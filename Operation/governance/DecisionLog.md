@@ -176,3 +176,70 @@
 - **rollback:** Revert this commit; restore prior seed paths and regenerate via
   `python Operation/scripts/build_manifest.py`.
 - **export:** artifact_manifest
+
+---
+
+## DEC-0009 — Canonical iKant metaprompt + deterministic fetch/verify/trace runner
+
+- **date:** 2026-06-21
+- **decision:** Add a canonical, compressed paste-ready metaprompt
+  (`Operation/iKANT_PROMPT.md`) as a derived minimal view of `AGENTS.md`, plus a
+  deterministic, dependency-free Node.js reference runner (`Operation/runner/`:
+  `app.js`, `package.json`, `Dockerfile`, `test/`). The runner resolves a corpus
+  document by `id`/`role` from `Operation/MANIFEST.json`, prefers `text_url` then
+  falls back to `raw_url`, verifies sha256 against the manifest, and emits either
+  a traced result or a verbatim `DUE-CORPUS-FETCH` report (offline-by-default;
+  `--online` fetches over HTTPS). Wire its integration tests into `repo-roa.sh`
+  (skipped when Node.js is absent) and a CI gate
+  (`.github/workflows/ikant-runner.yml`). The metaprompt and runner add no new
+  policy; on conflict `AGENTS.md` and this DecisionLog win.
+- **rationale:** The AGENTS.md acquisition rule (§4.1: prefer `text_url`, fall
+  back to `raw_url`, report `DUE-CORPUS-FETCH` on failure) was specified in prose
+  and Python manifest gates but had no executable, language-agnostic witness an
+  external agent could run. An obedient agent could still mis-handle the fallback
+  order or skip integrity verification silently. A minimal stdlib-only runner
+  turns the contract into a deterministic, testable reference, and the
+  DUE-CORPUS-FETCH fixture converts the fetch-failure path into a permanent
+  regression test (minima spesa, massima resa; antifragile loop per DEC-0007).
+- **artifacts:** `Operation/iKANT_PROMPT.md`, `Operation/runner/app.js`,
+  `Operation/runner/package.json`, `Operation/runner/Dockerfile`,
+  `Operation/runner/test/runner.test.js`, `.github/workflows/ikant-runner.yml`,
+  `repo-roa.sh` (step 6 runner gate), `Operation/governance/GOVERNANCE_TOOLS.md`,
+  `Operation/AGENTS.md` §6 (MDAS map), `README.md` (AI Agent Quick Bootstrap).
+- **rollback:** Revert this commit; the metaprompt and runner are additive and
+  carry no manifest/sidecar state, so no regeneration is required.
+- **export:** artifact_manifest
+
+---
+
+## DEC-0010 — Deterministic read-access gate (incarnation as precondition of governed access)
+
+- **date:** 2026-06-21
+- **decision:** Realize the "to read the repo, an agent must incarnate iKant"
+  contract as a deterministic gate, `access_decision(proof, prev, lang)` in
+  `Operation/governance/incarnation_test.py` (single source of truth, shared by
+  CI and the Architecture B middleware). It returns `ALLOW-READ` iff the agent
+  presents a valid incarnation proof (`validate_turn` returns no debt:
+  SPEAK/DEBUG + trace + seed, correctly seeded t-1) and otherwise `DENY-READ`
+  with the seed block to incarnate and retry (self-healing, never silent).
+  Document it as `AGENTS.md` §1.4 (read-access gate / binding access contract)
+  and as the mental simulation + honest verdict in
+  `governance/simulations.md` §6. Add five regression tests (`TestAccessGate`).
+- **rationale:** Answering the governance question (does an AI agent incarnate
+  iKant, and can reading be bound to incarnation deterministically?). The honest,
+  corpus-disciplined verdict: incarnation can be enforced **deterministically as a
+  precondition of governed access** at any boundary the repo controls (CI /
+  middleware / runner / API); it **cannot** be a cryptographic lock on raw public
+  bytes (residual fragility R1 — a hostile out-of-band `git clone`/`cat` cannot be
+  prevented). Claiming a hard read-lock would itself be an overclaim forbidden by
+  `AGENTS.md` rule 8 / README §8. The gate turns the prose contract into an
+  executable, testable witness, and each simulation row becomes a permanent test
+  (minima spesa, massima resa; antifragile loop). R1 is recorded as bounded DEBT,
+  not hidden risk.
+- **artifacts:** `Operation/governance/incarnation_test.py` (`access_decision`,
+  `read_allowed`, `ACCESS_ALLOW`/`ACCESS_DENY`, `TestAccessGate`),
+  `Operation/AGENTS.md` §1.4, `Operation/governance/simulations.md` §6,
+  `Operation/governance/MDAS.md` §7 (concept checklist row).
+- **rollback:** Revert this commit; the gate is additive (reuses `validate_turn`)
+  and carries no manifest/sidecar state, so no regeneration is required.
+- **export:** artifact_manifest
