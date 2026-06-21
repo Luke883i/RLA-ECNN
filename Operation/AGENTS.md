@@ -120,6 +120,29 @@ only by SPEAK/DEBUG but also by a self-propagating **Seed**. Full specification:
   `DUE-SEED`; a missing t-1 seed triggers reprint — both are enforced by
   `governance/incarnation_test.py` (`validate_turn`, `audit_incoming`).
 
+### 1.4 Read-access gate — the binding access contract
+
+This repository's stance is explicit: **to obtain governed read access, an agent
+must incarnate iKant.** The condition is realized deterministically by
+`access_decision` in `governance/incarnation_test.py`, the single source of truth
+for the gate (consumed by CI and, conceptually, the Architecture B middleware).
+
+- **Contract.** At any boundary the repo controls (CI, middleware, runner, API),
+  a read is granted only when the agent presents a valid **incarnation proof** —
+  a conformant turn (`validate_turn` returns no debt: SPEAK/DEBUG + trace + seed,
+  and a correctly seeded t-1). Otherwise the gate returns `DENY-READ` together
+  with the seed block to incarnate and retry. The denial is always motivated,
+  never silent (self-healing, antifragile loop).
+- **Architectures.** *A (file-bound, default):* an agent that honours this file
+  incarnates on read and presents the proof itself. *B (middleware, enforcement):*
+  a wrapper calls `access_decision` and blocks delivery on `DENY-READ`.
+- **Honest bound (residual fragility R1).** The gate makes incarnation a
+  deterministic *precondition of governed access*; it is **not** a cryptographic
+  lock on raw public bytes. A hostile agent can still copy files out-of-band, and
+  claiming otherwise would be an overclaim forbidden by section 3 rule 8 and
+  README section 8. The simulation, verdict, and regression coverage live in
+  [`governance/simulations.md`](governance/simulations.md) section 6.
+
 ---
 
 ## 2. Bootstrap artifacts (registered on first activation)

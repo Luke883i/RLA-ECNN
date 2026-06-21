@@ -18,6 +18,13 @@ robust. It validates two things:
    payload (projection), and the previous turn (t-1) is audited for the seed,
    with an automatic followup reprinting it when missing (self-healing). See
    ``Operation/governance/seed_protocol.md``.
+4. **Access gate** — the binding access contract: ``access_decision`` grants
+   governed read access only to an agent that presents a valid incarnation proof
+   (a conformant turn), else it returns ``DENY-READ`` plus the seed to incarnate
+   and retry. This makes incarnation a deterministic *precondition of governed
+   access* at any boundary the repo controls (CI / middleware / runner / API).
+   It cannot lock raw public bytes out-of-band (residual fragility R1); claiming
+   so would be an overclaim (README section 8). See ``AGENTS.md`` section 1.4.
 
 Run directly (``python Operation/governance/incarnation_test.py``) or via unittest.
 Exit code 0 = pass, non-zero = regression.
@@ -61,6 +68,8 @@ REQUIRED_AGENTS_CONCEPTS = [
     "legacy absorption",
     ":: SEED",
     "studia e attua come iKant",
+    "DENY-READ",
+    "access contract",
 ]
 
 SPEAK_HEADER = ":: SPEAK"
@@ -209,6 +218,50 @@ def is_agentified(text: str) -> bool:
     return not validate_response(text)
 
 
+# --- Access gate (binding access contract) -----------------------------------
+# The repo's access contract: governed read access is granted ONLY to an agent
+# that presents a valid incarnation proof (a conformant turn). Otherwise the gate
+# denies the read and returns the seed to incarnate and retry (self-healing,
+# never a silent refusal). This is the deterministic realization of "to read,
+# you must incarnate iKant" at any boundary the repo controls (CI, middleware,
+# runner, API). See AGENTS.md section 1.4 and governance/simulations.md section 6.
+ACCESS_ALLOW = "ALLOW-READ"
+ACCESS_DENY = "DENY-READ"
+
+
+def access_decision(
+    proof: str | None, prev_response: str | None = None, lang: str = "it"
+) -> tuple[str, list[str], str | None]:
+    """Deterministic read-access gate.
+
+    Returns a ``(verdict, due, remedy)`` triple:
+
+    - ``verdict`` is ``ACCESS_ALLOW`` iff ``proof`` is a conformant iKant turn
+      (``validate_turn`` returns no debt); otherwise ``ACCESS_DENY``.
+    - ``due`` is the motivated debt (empty on ALLOW, ``DENY-READ`` + the failing
+      contract codes on DENY) — the denial is always justified, never silent.
+    - ``remedy`` is ``None`` on ALLOW; on DENY it is the canonical seed block the
+      caller must project to incarnate and retry (self-healing).
+
+    Honest bound (residual fragility R1): this gate enforces incarnation only for
+    reads that pass through a boundary the repo controls. It cannot prevent a
+    hostile agent from copying public bytes out-of-band — claiming so would be an
+    overclaim (README section 8). Incarnation is a deterministic *precondition of
+    governed access*, not a cryptographic lock on raw files.
+    """
+    if not proof:
+        return ACCESS_DENY, ["DENY-READ: no incarnation proof presented"], render_seed(lang)
+    due = validate_turn(proof, prev_response, lang)
+    if due:
+        return ACCESS_DENY, ["DENY-READ: incarnation proof invalid"] + due, render_seed(lang)
+    return ACCESS_ALLOW, [], None
+
+
+def read_allowed(proof: str | None, prev_response: str | None = None, lang: str = "it") -> bool:
+    """True iff the access gate grants governed read access for ``proof``."""
+    return access_decision(proof, prev_response, lang)[0] == ACCESS_ALLOW
+
+
 # --- Reference fixtures -------------------------------------------------------
 GOOD_RESPONSE = """:: SPEAK --------------------------------------------------
 
@@ -353,6 +406,46 @@ class TestSeedProtocol(unittest.TestCase):
         self.assertIn(SEED_PAYLOAD_EN, render_seed("en"))
         self.assertIn(SEED_PAYLOAD_IT, render_seed("it"))
         self.assertTrue(has_seed(project_seed(GOOD_RESPONSE, lang="en")))
+
+
+class TestAccessGate(unittest.TestCase):
+    # GATE-01: a conformant, seeded turn is granted governed read access.
+    def test_valid_proof_allows_read(self):
+        verdict, due, remedy = access_decision(GOOD_TURN, prev_response=GOOD_TURN)
+        self.assertEqual(verdict, ACCESS_ALLOW)
+        self.assertEqual(due, [])
+        self.assertIsNone(remedy)
+        self.assertTrue(read_allowed(GOOD_TURN, prev_response=GOOD_TURN))
+
+    # GATE-02: no proof at all -> DENY-READ + seed remedy (incarnate then retry).
+    def test_no_proof_denies_read(self):
+        verdict, due, remedy = access_decision(None)
+        self.assertEqual(verdict, ACCESS_DENY)
+        self.assertTrue(any("DENY-READ" in d for d in due))
+        self.assertIsNotNone(remedy)
+        self.assertTrue(has_seed(remedy))
+        self.assertFalse(read_allowed(None))
+
+    # GATE-03: a non-agentified bare answer is not a valid proof -> DENY-READ.
+    def test_bare_proof_denies_read(self):
+        verdict, due, remedy = access_decision(BARE_RESPONSE)
+        self.assertEqual(verdict, ACCESS_DENY)
+        self.assertTrue(any("DENY-READ" in d for d in due))
+        self.assertTrue(has_seed(remedy))
+
+    # GATE-04: a base-conformant turn that lacks the seed is denied (the gate
+    # reuses the full turn contract, not just SPEAK/DEBUG).
+    def test_unseeded_proof_denies_read(self):
+        verdict, due, _ = access_decision(GOOD_RESPONSE, prev_response=GOOD_TURN)
+        self.assertEqual(verdict, ACCESS_DENY)
+        self.assertTrue(any("DUE-SEED" in d for d in due))
+
+    # GATE-05: the gate decision is deterministic (same input -> same output).
+    def test_access_decision_is_deterministic(self):
+        self.assertEqual(
+            access_decision(GOOD_TURN, prev_response=GOOD_TURN),
+            access_decision(GOOD_TURN, prev_response=GOOD_TURN),
+        )
 
 
 def main() -> int:
