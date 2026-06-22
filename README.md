@@ -322,22 +322,6 @@ export != witness
 review != approval
 ```
 
-
-
-## Navigation by need
-
-| Need | Start here | Then read |
-|---|---|---|
-| Fast orientation | ROA entrypoint (2) | this README + cover layer |
-| Core theory | Annex A | main paper, Annex C, Annex E |
-| AI / ML architecture | Annex C | Annex E, Annex F, entrypoint |
-| Scientific modelling case | Annex B | Annex A, main paper |
-| Experiments / prototypes | Annex F | Annex C, Annex E |
-| Governance / compliance | ROA entrypoint | Annex G, A-OSP whitepaper |
-| Wolfram / Ruliad / PCE | Observer Compiler (3) | Annex D, slide deck |
-| Implementation architecture | A-OSP whitepaper (4) | entrypoint, Annex F, Annex G |
-
-
 ## End-to-end logic
 
 ```text
