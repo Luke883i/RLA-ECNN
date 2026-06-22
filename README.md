@@ -264,12 +264,10 @@ The defensible novelty is the operational layer where **controlled reification**
 
 
 ### Scientific spine
-
 - RLA models bounded observers as finite reticula of levels, languages, encodings, transmissions, horizons, and collapse policies.
 - CRC asks when a reticulum is computably operable under a declared horizon (`CRC-basic` / `CRC-strong`).
 - ECNN is CNN-inspired (not necessarily classical CNN), mapping fields into pattern maps, pooled/collapsed candidates, then epistemic artefacts (including unknown/contradiction/horizon-exceeded/review-required/debt-open).
-
-A bounded epistemic transducer:
+- A bounded epistemic transducer:
 
 ```text
 representation + epistemic matrix -> structured epistemic artefact
