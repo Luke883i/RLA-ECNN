@@ -265,23 +265,17 @@ The defensible novelty is the operational layer where **controlled reification**
 
 ### Scientific spine
 
-RLA models bounded observers as finite reticula of levels, languages, encodings, transmissions, horizons, and collapse policies.
-
-CRC asks when a reticulum is computably operable under a declared horizon (`CRC-basic` / `CRC-strong`).
-
-ECNN is CNN-inspired (not necessarily classical CNN), mapping fields into pattern maps, pooled/collapsed candidates, then epistemic artefacts (including unknown/contradiction/horizon-exceeded/review-required/debt-open).
+- RLA models bounded observers as finite reticula of levels, languages, encodings, transmissions, horizons, and collapse policies.
+- CRC asks when a reticulum is computably operable under a declared horizon (`CRC-basic` / `CRC-strong`).
+- ECNN is CNN-inspired (not necessarily classical CNN), mapping fields into pattern maps, pooled/collapsed candidates, then epistemic artefacts (including unknown/contradiction/horizon-exceeded/review-required/debt-open).
 
 A bounded epistemic transducer:
 
 ```text
 representation + epistemic matrix -> structured epistemic artefact
 ```
-
-#### ROA — Reticular Observer Architecture
-Governance compression of RLA/CRC/ECNN: when a pattern becomes an object, debt is created and propagated until discharged/blocked/rolled back.
-
-#### A-OSP — Implementation witness
-A browser-native, text-first, proof-aware environment where:
+- Governance compression of RLA/CRC/ECNN: when a pattern becomes an object, debt is created and propagated until discharged/blocked/rolled back.
+- A browser-native, text-first, proof-aware environment where:
 
 ```text
 model output != proof
