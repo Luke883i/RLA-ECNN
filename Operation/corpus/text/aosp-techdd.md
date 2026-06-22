@@ -3,8 +3,8 @@
 id: "aosp-techdd"
 title: "A-OSP Webapp Technical Due Diligence v1 (Infrastructure, Runtime, Topology)"
 role: "implementation_due_diligence"
-source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(2) A-OSP Webapp Technical Due Diligence [TechDD].pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%282%29%20A-OSP%20Webapp%20Technical%20Due%20Diligence%20%5BTechDD%5D.pdf"
+source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(4) A-OSP Webapp Technical Due Diligence [TechDD].pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%284%29%20A-OSP%20Webapp%20Technical%20Due%20Diligence%20%5BTechDD%5D.pdf"
 source_sha256: "087ffc5597dd61b04d8aab181c920928fee8e998915da472f09575a0fd4a1f37"
 extraction_status: "success"
 ---

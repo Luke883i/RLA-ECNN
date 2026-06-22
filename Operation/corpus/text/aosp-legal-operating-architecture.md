@@ -5,7 +5,7 @@ title: "Legal Operating Architecture Target"
 role: "legal_operating_architecture_target"
 source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(5) A-OSP Legal Operating Architecture Target [LOA].pdf"
 source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%285%29%20A-OSP%20Legal%20Operating%20Architecture%20Target%20%5BLOA%5D.pdf"
-source_sha256: "f2ebcd99421117364eb0461c33e2889f14bc1d85b4b11bb7a81f46f21afa2bc9"
+source_sha256: "41b280f01f6d97501aa75e40b5a73d56139466cef2cd62d62daf3ac4a1d96c65"
 extraction_status: "success"
 ---
 
@@ -16,10 +16,12 @@ A-OSP
 Legal & Operating Architecture
 How the OpCo + standards-vehicle structure is built, owned and governed — with commercial economics 
 governed by Pitch
-This document is for diligence, not persuasion: it answers how the structure works, who controls what, and why each capital type 
+This document is for diligence, not persuasion: it answers how the structure works, who controls what, and why each capital type
 fits where.
 Gianluca Conte · contegianluca@hotmail.com · Milan · 2026
 draft · indicative structures and costs · not legal, tax or financial advice · to be confirmed with Italian counsel and a notary
+Legal & Ops. Architecture. 
+(LOA)
 
 ## Page 2
 
@@ -62,7 +64,7 @@ reversibility
 Start with the lightest legal form that works (SRL + ETS). Every upgrade — SpA, Foundation, 
 holding, foreign entity — is triggered by a gate (revenue, round, market), never paid for upfront. 
 The structure grows only when evidence justifies it.
-Cross-reference: the commercial case lives in Investment Pitch; the proof mechanics in the Whitepaper [WP] / Technical Due Diligence
+Cross-reference: the commercial case lives in Investment Pitch; the proof mechanics in the Whitepaper [WP] / Technical Due Diligence 
 [TechDD]. This memorandum is the legal and operating layer beneath both.
 A-OSP · LOA · companion to Investment Pitch 3
 

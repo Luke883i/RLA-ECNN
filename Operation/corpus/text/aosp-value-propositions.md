@@ -3,9 +3,9 @@
 id: "aosp-value-propositions"
 title: "A-OSP Value Propositions Brief View"
 role: "implementation_value_proposition"
-source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(3) A-OSP Value Propositions Brief View [VPB].pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%283%29%20A-OSP%20Value%20Propositions%20Brief%20View%20%5BVPB%5D.pdf"
-source_sha256: "07b7c218df70479579c4dcaeed2705a6081f1cb2c7ec9b27397231f8ffdc37c6"
+source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(1) A-OSP Value Propositions Brief View [VPB].pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%281%29%20A-OSP%20Value%20Propositions%20Brief%20View%20%5BVPB%5D.pdf"
+source_sha256: "38214ef78e2b698dfe132b613424cc876b425b49f3b2e7462078a78e1fa41d36"
 extraction_status: "success"
 ---
 
@@ -20,6 +20,8 @@ It doesn't open the black box. It moves the trust boundary outside the model.
 Companion deck: theory lives in [RLA/CRC/ECNN/ROA], architecture in the [Whitepaper -WP], repo evidence in the [TechDD].
 This deck points into them instead of repeating them.
 Posture anchored to main@e492290b · June 2026 · every claim carries a maturity tag (AS-IS / HARDENING / TARGET / HYPOTHESIS / NON-GOAL) A-OSP  ·  1 / 14
+Value Proposition 
+(VPB)
 
 ## Page 2
 
@@ -297,7 +299,8 @@ orchestration ArtifactWitness; scoped calls + proof bundles
 First wedge: compliance — it stress-tests evidence, absence of evidence, accountability and human review. Entry use cases: supplier 
 payment controls, due diligence, incident review, policy impact, technical audit.
 Why now: commoditised generation + regulatory pressure (AI Act, DORA, NIS2) + the rising cost of non-reconstructability. A-OSP gains 
-value from the same forces that make prompt-first AI fragile.
+value from the same forces that make prompt-first AI fragile. The category is large and fast-growing — GRC plus a multi-billion AI-
+governance market by 2030 (external estimates) — and incumbents are repositioning toward proof; sizing lives in Pitch Deck v7.
 Corpus → WP §24 (compliance as first wedge), §28 (full matrix) · CIPM “why it compounds” A-OSP  ·  12 / 14
 
 ## Page 13

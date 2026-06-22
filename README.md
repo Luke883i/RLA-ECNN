@@ -119,6 +119,7 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 | `implementation_proof_mechanics` | `aosp-cipm-proof-mechanics` | `Operation/corpus/text/aosp-cipm-proof-mechanics.md` |
 | `implementation_value_proposition` | `aosp-value-propositions` | `Operation/corpus/text/aosp-value-propositions.md` |
 | `legal_operating_architecture_target` | `aosp-legal-operating-architecture` | `Operation/corpus/text/aosp-legal-operating-architecture.md` |
+| `investment_pitch` | `aosp-investment-pitch` | `Operation/corpus/text/aosp-investment-pitch.md` |
 | `core_paper` | `main-paper-rla-ecnn-crc-pce` | `Operation/corpus/text/main-paper-rla-ecnn-crc-pce.md` |
 | `slidedeck` | `slidedeck-rla-ecnn-pce-bridge` | `Operation/corpus/text/slidedeck-rla-ecnn-pce-bridge.md` |
 | `technical_annex` | `annex-a-rla-crc-foundations` | `Operation/corpus/text/annex-a-rla-crc-foundations.md` |
