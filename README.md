@@ -224,6 +224,7 @@ Suggested reading pathways:
 ├── 📑 (3) A-OSP Webapp Whitepaper [WP].pdf
 ├── 📑 (4) A-OSP Webapp Technical Due Diligence [TechDD].pdf
 ├── 📑 (5) A-OSP Legal Operating Architecture Target [LOA].pdf
+├── 📑 (6) A-OSP Investment Pitch [INP].pdf
 |
 |   SCIENTIFIC SPINE, METODOLOGY SCAFFOLDING/BACKLOG
 ├──🗂️ 2-RLA-CRC-ECNN
