@@ -3,9 +3,9 @@
 id: "aosp-cipm-proof-mechanics"
 title: "A-OSP Core Idea & Proof Mechanics Brief"
 role: "implementation_proof_mechanics"
-source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(4) [CIPM] A-OSP Core Idea & Proof Mechanics Brief.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%284%29%20%5BCIPM%5D%20A-OSP%20Core%20Idea%20%26%20Proof%20Mechanics%20Brief.pdf"
-source_sha256: "f59df3ccf18a5d17dc6bd9181a8b5964deb9c5bc06e1cf7e727dc6369b4b90a3"
+source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%282%29%20A-OSP%20Core%20Idea%20Proof%20Mechanics%20Brief%20%5BCIPM%5D.pdf"
+source_sha256: "e772d595eb7a0abbfec15ba782ed9d7435db400b019035681f2d50b9bddedbb0"
 extraction_status: "success"
 ---
 
@@ -21,6 +21,7 @@ Companion brief — claims anchored to live repo main@e492290b · June 2026.
 Deep layers live in the Whitepaper, the Technical Due Diligence and the ROA corpus; this brief points into them instead of repeating them.
 Gianluca Conte · contegianluca@hotmail.com  ·  2026 · confidential discussion draft · not legal or financial advice
 A-OSP · Core Idea & Proof Mechanics Brief · CIPM v3 · posture: main@e492290b · June 2026 1
+Core Idea (CIPM)
 
 ## Page 2
 
