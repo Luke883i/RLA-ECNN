@@ -3,8 +3,8 @@
 id: "aosp-cipm-proof-mechanics"
 title: "A-OSP Core Idea & Proof Mechanics Brief"
 role: "implementation_proof_mechanics"
-source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%282%29%20A-OSP%20Core%20Idea%20Proof%20Mechanics%20Brief%20%5BCIPM%5D.pdf"
+source_path: "Augmented Ontological Semantic Platform A-OSP/(2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%282%29%20A-OSP%20Core%20Idea%20Proof%20Mechanics%20Brief%20%5BCIPM%5D.pdf"
 source_sha256: "e772d595eb7a0abbfec15ba782ed9d7435db400b019035681f2d50b9bddedbb0"
 extraction_status: "success"
 ---

@@ -3,8 +3,8 @@
 id: "main-paper-rla-ecnn-crc-pce"
 title: "Main Paper - RLA-ECNN-CRC-PCE"
 role: "core_paper"
-source_path: "2-RLA-CRC-ECNN/_Main_Paper_RLA-ECNN-CRC-PCE.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/2-RLA-CRC-ECNN/_Main_Paper_RLA-ECNN-CRC-PCE.pdf"
+source_path: "Reticular Local Abstraction RLA-CRC-ECNN/_Main_Paper_RLA-ECNN-CRC-PCE.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Reticular%20Local%20Abstraction%20RLA-CRC-ECNN/_Main_Paper_RLA-ECNN-CRC-PCE.pdf"
 source_sha256: "46614044c0ca3d6441d9052f20e6f16c1c117f4337baf692bdcc9bdf0c0d89e9"
 extraction_status: "success"
 ---

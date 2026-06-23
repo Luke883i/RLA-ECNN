@@ -3,8 +3,8 @@
 id: "aosp-value-propositions"
 title: "A-OSP Value Propositions Brief View"
 role: "implementation_value_proposition"
-source_path: "1-AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM (A-OSP)/(1) A-OSP Value Propositions Brief View [VPB].pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/1-AUGMENTED%20ONTOLOGICAL%20SEMANTIC%20PLATFORM%20%28A-OSP%29/%281%29%20A-OSP%20Value%20Propositions%20Brief%20View%20%5BVPB%5D.pdf"
+source_path: "Augmented Ontological Semantic Platform A-OSP/(1) A-OSP Value Propositions Brief View [VPB].pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%281%29%20A-OSP%20Value%20Propositions%20Brief%20View%20%5BVPB%5D.pdf"
 source_sha256: "38214ef78e2b698dfe132b613424cc876b425b49f3b2e7462078a78e1fa41d36"
 extraction_status: "success"
 ---

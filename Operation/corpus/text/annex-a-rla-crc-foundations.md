@@ -3,8 +3,8 @@
 id: "annex-a-rla-crc-foundations"
 title: "Annex A - RLA-CRC Foundations"
 role: "technical_annex"
-source_path: "2-RLA-CRC-ECNN/Annex A - RLA-CRC Foundations.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/2-RLA-CRC-ECNN/Annex%20A%20-%20RLA-CRC%20Foundations.pdf"
+source_path: "Reticular Local Abstraction RLA-CRC-ECNN/Annex A - RLA-CRC Foundations.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Reticular%20Local%20Abstraction%20RLA-CRC-ECNN/Annex%20A%20-%20RLA-CRC%20Foundations.pdf"
 source_sha256: "bed516b6858f10722d102aae24103c9589bbd818f891248db47c9ebc6df3797e"
 extraction_status: "success"
 ---

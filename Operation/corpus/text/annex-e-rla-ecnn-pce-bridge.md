@@ -3,8 +3,8 @@
 id: "annex-e-rla-ecnn-pce-bridge"
 title: "Annex E - RLA-ECNN bridge PCE"
 role: "technical_annex"
-source_path: "2-RLA-CRC-ECNN/Annex E - RLA-ECNN bridge PCE.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/2-RLA-CRC-ECNN/Annex%20E%20-%20RLA-ECNN%20bridge%20PCE.pdf"
+source_path: "Reticular Local Abstraction RLA-CRC-ECNN/Annex E - RLA-ECNN bridge PCE.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Reticular%20Local%20Abstraction%20RLA-CRC-ECNN/Annex%20E%20-%20RLA-ECNN%20bridge%20PCE.pdf"
 source_sha256: "9b60fcd0ff6a269404208d991478dd794cc5f48b7a7e0d9686a6adfc5ec6be35"
 extraction_status: "success"
 ---

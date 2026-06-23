@@ -3,8 +3,8 @@
 id: "annex-d-ecu-uce-specification"
 title: "Annex D - Epistemic LLM neuron ECU-UC Specification"
 role: "technical_annex"
-source_path: "2-RLA-CRC-ECNN/Annex D - Epistemic LLM neuron ECU-UC Specification.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/2-RLA-CRC-ECNN/Annex%20D%20-%20Epistemic%20LLM%20neuron%20ECU-UC%20Specification.pdf"
+source_path: "Reticular Local Abstraction RLA-CRC-ECNN/Annex D - Epistemic LLM neuron ECU-UC Specification.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Reticular%20Local%20Abstraction%20RLA-CRC-ECNN/Annex%20D%20-%20Epistemic%20LLM%20neuron%20ECU-UC%20Specification.pdf"
 source_sha256: "bd424693c01ddff79365a9211deebaa649e5f9ad2c14949b62eae158e9fee186"
 extraction_status: "success"
 ---

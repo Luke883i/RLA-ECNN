@@ -3,8 +3,8 @@
 id: "slidedeck-rla-ecnn-pce-bridge"
 title: "Slidedeck - RLA-ECNN PCE Bridge"
 role: "slidedeck"
-source_path: "2-RLA-CRC-ECNN/_Slidedeck_RLA-ECNN_bridge_PCE.pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/2-RLA-CRC-ECNN/_Slidedeck_RLA-ECNN_bridge_PCE.pdf"
+source_path: "Reticular Local Abstraction RLA-CRC-ECNN/_Slidedeck_RLA-ECNN_bridge_PCE.pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Reticular%20Local%20Abstraction%20RLA-CRC-ECNN/_Slidedeck_RLA-ECNN_bridge_PCE.pdf"
 source_sha256: "089aac6a291dd3fd809e825eb9d3d31e4ff19a3778488813e8aef77380160eb8"
 extraction_status: "success"
 ---
