@@ -3,8 +3,8 @@
 id: "aosp-legal-operating-architecture"
 title: "Legal Operating Architecture Target"
 role: "legal_operating_architecture_target"
-source_path: "Augmented Ontological Semantic Platform A-OSP/(5) A-OSP Legal Operating Architecture Target [LOA].pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%285%29%20A-OSP%20Legal%20Operating%20Architecture%20Target%20%5BLOA%5D.pdf"
+source_path: "Augmented Ontological Semantic Platform A-OSP/(6) A-OSP Legal Operating Architecture Target [LOA].pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%286%29%20A-OSP%20Legal%20Operating%20Architecture%20Target%20%5BLOA%5D.pdf"
 source_sha256: "41b280f01f6d97501aa75e40b5a73d56139466cef2cd62d62daf3ac4a1d96c65"
 extraction_status: "success"
 ---
