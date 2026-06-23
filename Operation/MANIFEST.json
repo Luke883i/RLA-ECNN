@@ -252,6 +252,18 @@
       "sha256": "ebdd802c28051be77b7e6168b4a5f83e1ba9d9cecd4035954b039779f8a6d409",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-investment-pitch.md",
       "text_sha256": "48c349842187e6f20e762db08fa1afc12c02d10a441e21af2f80a02e24e608b4"
+    },
+    {
+      "id": "5-a-osp-build-data-room-dr",
+      "title": "(5) A-OSP Build Data Room [DR]",
+      "role": "UNREVIEWED_AUTOSEEDED",
+      "path": "Augmented Ontological Semantic Platform A-OSP/(5) A-OSP Build Data Room [DR].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%285%29%20A-OSP%20Build%20Data%20Room%20%5BDR%5D.pdf",
+      "canonical": true,
+      "size_bytes": 440138,
+      "sha256": "6f11cc928f0260c1667bc7196b1bd22156dfe6555258f9ea91e1577c19d322f7",
+      "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/5-a-osp-build-data-room-dr.md",
+      "text_sha256": "f0b98fd499b706973c007555990efd047a681463406cf88173c2094ab907080b"
     }
   ]
 }
