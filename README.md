@@ -94,8 +94,8 @@ node --test Operation/runner/test/*.test.js             # integration tests
 
 By default the runner resolves manifest URLs to local repository files
 (deterministic, offline); pass `--online` to fetch from
-`raw.githubusercontent.com`. `./repo-roa.sh --check` runs these runner tests when
-Node.js is available.
+`raw.githubusercontent.com`. `./Operation/repo-roa.sh --check` runs these runner
+tests when Node.js is available.
 
 ### Semantic reticulum navigation
 
@@ -139,15 +139,15 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 
 ### Corpus lifecycle
 
-`repo-roa.sh` is the single governance orchestrator: a thin, deterministic
-wrapper that runs every documentation-alignment gate in one command, keeping the
-PDFs, `Operation/MANIFEST.json`, the text sidecars, and this README mutually
-consistent.
+`Operation/repo-roa.sh` is the single governance orchestrator: a thin,
+deterministic wrapper that runs every documentation-alignment gate in one
+command, keeping the PDFs, `Operation/MANIFEST.json`, the text sidecars, and this
+README mutually consistent.
 
 ```bash
-./repo-roa.sh           # APPLY: regenerate MANIFEST.json + sidecars, then verify all gates
-./repo-roa.sh --check   # VERIFY (read-only): the exact contract CI enforces; fails on any drift
-./repo-roa.sh --help    # full flag list (--online, --no-install)
+./Operation/repo-roa.sh           # APPLY: regenerate MANIFEST.json + sidecars, then verify all gates
+./Operation/repo-roa.sh --check   # VERIFY (read-only): the exact contract CI enforces; fails on any drift
+./Operation/repo-roa.sh --help    # full flag list (--online, --no-install)
 ```
 
 Run it after adding, renaming, or deleting a PDF, or after editing seed

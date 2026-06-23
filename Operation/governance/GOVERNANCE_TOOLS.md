@@ -12,18 +12,18 @@
 
 | Tool | Purpose | Scope |
 |---|---|---|
-| `repo-roa.sh` (repo root) | Single entrypoint that **applies** (or, with `--check`, **verifies**) every alignment gate below in order: regenerate corpus map + sidecars → builder unit tests → validate manifest → audit geometry → README/MANIFEST alignment → iKant incarnation → iKant runner tests (when Node.js present). | Whole repo: PDFs, `Operation/MANIFEST.json`, `Operation/corpus/text/`, `README.md`, agentification contract. |
+| `Operation/repo-roa.sh` | Single entrypoint that **applies** (or, with `--check`, **verifies**) every alignment gate below in order: regenerate corpus map + sidecars → builder unit tests → validate manifest → audit geometry → README/MANIFEST alignment → iKant incarnation → iKant runner tests (when Node.js present). | Whole repo: PDFs, `Operation/MANIFEST.json`, `Operation/corpus/text/`, `README.md`, agentification contract. |
 
 Run after adding / renaming / deleting a PDF or editing seed metadata:
 
 ```bash
-./repo-roa.sh            # APPLY: realign all surfaces, then verify
-./repo-roa.sh --check    # VERIFY only (the contract CI enforces)
-./repo-roa.sh --online   # also HTTP-HEAD every raw_url (needs network)
+./Operation/repo-roa.sh            # APPLY: realign all surfaces, then verify
+./Operation/repo-roa.sh --check    # VERIFY only (the contract CI enforces)
+./Operation/repo-roa.sh --online   # also HTTP-HEAD every raw_url (needs network)
 ```
 
-`repo-roa.sh` is a thin deterministic wrapper; it adds no policy of its own and
-each wrapped script remains independently runnable.
+`Operation/repo-roa.sh` is a thin deterministic wrapper; it adds no policy of its
+own and each wrapped script remains independently runnable.
 
 ---
 
@@ -36,7 +36,7 @@ each wrapped script remains independently runnable.
 | `Operation/scripts/audit_corpus_geometry.py` | Audit corpus geometry: detect stale paths, stale raw URLs, missing sidecars, and unmanifested (orphan) PDFs. `--check` fails on any non-OK entry. |
 | `Operation/scripts/check_readme_manifest_alignment.py` | Verify the README semantic reticulum table and `MANIFEST.json` stay mutually aligned (every canonical entry listed; no dangling ids). |
 | `Operation/scripts/manifest_common.py` | Shared helpers (repo root, canonical raw-URL builder, sha256, manifest loader) used by the corpus scripts. |
-| `Operation/scripts/test_build_manifest.py` | Unit tests for the manifest builder's normalization/resolution logic. Run by `./repo-roa.sh` and the `validate-corpus.yml` CI gate. |
+| `Operation/scripts/test_build_manifest.py` | Unit tests for the manifest builder's normalization/resolution logic. Run by `./Operation/repo-roa.sh` and the `validate-corpus.yml` CI gate. |
 
 `Operation/MANIFEST.json` is the **only** machine-canonical corpus-acquisition
 map (DEC-0007). Sidecars are generated output and must never be hand-edited.
@@ -54,7 +54,7 @@ map (DEC-0007). Sidecars are generated output and must never be hand-edited.
 | `Operation/governance/simulations.md` | Recorded mental simulations / regression rationale (antifragile loop). |
 | `Operation/iKANT_PROMPT.md` | Canonical compressed, paste-ready iKant metaprompt: a derived minimal view of `AGENTS.md` (fetch + verify + trace + DUE-CORPUS-FETCH). `AGENTS.md` / `DecisionLog.md` win on conflict. |
 | `Operation/runner/app.js` | Deterministic, dependency-free (Node.js stdlib) reference runner: resolve a document by `id`/`role`, prefer `text_url` then `raw_url`, verify sha256, emit a traced result or a verbatim `DUE-CORPUS-FETCH`. Offline by default; `--online` fetches over HTTPS. |
-| `Operation/runner/test/*.test.js` | Dependency-free integration tests for the runner (`node --test`), incl. the DUE-CORPUS-FETCH fixture. Run via `./repo-roa.sh` when Node.js is present. |
+| `Operation/runner/test/*.test.js` | Dependency-free integration tests for the runner (`node --test`), incl. the DUE-CORPUS-FETCH fixture. Run via `./Operation/repo-roa.sh` when Node.js is present. |
 
 ---
 
@@ -68,5 +68,5 @@ map (DEC-0007). Sidecars are generated output and must never be hand-edited.
 | `.github/workflows/ikant-incarnation.yml` | Run `incarnation_test.py` on agent-surface changes. | §3 |
 | `.github/workflows/ikant-runner.yml` | Run the dependency-free `Operation/runner/` integration tests (`node --test`) on runner/manifest/metaprompt changes. | §3 |
 
-`./repo-roa.sh --check` runs the union of the §2/§3 gates locally, reproducing
+`./Operation/repo-roa.sh --check` runs the union of the §2/§3 gates locally, reproducing
 what CI enforces.

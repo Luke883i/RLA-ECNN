@@ -15,7 +15,7 @@
 #   Operation/governance/GOVERNANCE_TOOLS.md.
 #
 # Usage
-#   ./repo-roa.sh [--check] [--online] [--no-install] [-h|--help]
+#   ./Operation/repo-roa.sh [--check] [--online] [--no-install] [-h|--help]
 #
 #   (no flags)    APPLY mode: regenerate MANIFEST.json + text sidecars, then run
 #                 every offline validation gate. Use after adding/renaming/
@@ -32,7 +32,10 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
+# repo-roa.sh lives in Operation/; every wrapped gate addresses paths relative to
+# the repository root, so anchor execution there (the parent of Operation/).
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+cd "$REPO_ROOT"
 
 PY="${PYTHON:-python3}"
 SCRIPTS="Operation/scripts"
