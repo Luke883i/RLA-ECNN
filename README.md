@@ -182,6 +182,9 @@ pending human curation.
 
 ---
 
+This is **not a coding repository**. ROA is a **PDF-born theoretical corpus** injected into GitHub as an epistemic container for governed, inspectable, agent-readable knowledge.
+
+The root layout is intentionally minimal: PDF entrypoints, PDF folders, this `README.md`, and technical dot entries. All non-PDF operational infrastructure lives in `Operation/`.
 
 This repository contains a compact research corpus on **reticular observer architectures**: AI-assisted systems whose outputs are treated not as isolated answers, but as products of explicit, bounded, reconstructable, auditable epistemic structures.
 
@@ -194,10 +197,6 @@ is replaced by:
 ```text
 bounded material -> observer structure -> typed artefacts -> validation state -> proof / witness / review / governance
 ```
-This is **not a coding repository**. ROA is a **PDF-born theoretical corpus** injected into GitHub as an epistemic container for governed, inspectable, agent-readable knowledge.
-
-The root layout is intentionally minimal: PDF entrypoints, PDF folders, this `README.md`, and technical dot entries. All non-PDF operational infrastructure lives in `Operation/`.
-
 The corpus is programmatic and criticisable. It does **not** claim completed mathematical proof, empirical validation, production readiness, legal certification, or artificial consciousness. Its aim is narrower: to make AI-assisted work horizon-relative, falsifiable, debt-aware, reification-aware, and governable.
 
 ### Suggested reading pathways:
