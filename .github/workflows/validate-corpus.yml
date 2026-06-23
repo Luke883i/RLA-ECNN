@@ -32,6 +32,9 @@ jobs:
       - name: Check generated manifest and sidecars
         run: python Operation/scripts/build_manifest.py --check
 
+      - name: Run manifest builder unit tests
+        run: python -m unittest Operation/scripts/test_build_manifest.py
+
       - name: Validate manifest offline
         run: python Operation/scripts/check_manifest.py
 

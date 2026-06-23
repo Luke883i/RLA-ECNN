@@ -87,6 +87,12 @@ else
   "$PY" "$SCRIPTS/build_manifest.py"
 fi
 
+# 1b. Builder regression tests: keep the deterministic normalization/resolution
+#     logic that produces the manifest honest. Read-only (operates on temp
+#     fixtures), so it runs identically in APPLY and VERIFY modes.
+step "Run manifest builder unit tests"
+"$PY" -m unittest "$SCRIPTS/test_build_manifest.py"
+
 # 2. Validate the manifest contract (paths, raw_url shape, size/sha256, no clouds).
 step "Validate MANIFEST.json offline"
 "$PY" "$SCRIPTS/check_manifest.py"
