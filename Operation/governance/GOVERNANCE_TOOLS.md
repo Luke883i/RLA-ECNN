@@ -12,7 +12,7 @@
 
 | Tool | Purpose | Scope |
 |---|---|---|
-| `repo-roa.sh` (repo root) | Single entrypoint that **applies** (or, with `--check`, **verifies**) every alignment gate below in order: regenerate corpus map + sidecars → validate manifest → audit geometry → README/MANIFEST alignment → iKant incarnation → iKant runner tests (when Node.js present). | Whole repo: PDFs, `Operation/MANIFEST.json`, `Operation/corpus/text/`, `README.md`, agentification contract. |
+| `repo-roa.sh` (repo root) | Single entrypoint that **applies** (or, with `--check`, **verifies**) every alignment gate below in order: regenerate corpus map + sidecars → builder unit tests → validate manifest → audit geometry → README/MANIFEST alignment → iKant incarnation → iKant runner tests (when Node.js present). | Whole repo: PDFs, `Operation/MANIFEST.json`, `Operation/corpus/text/`, `README.md`, agentification contract. |
 
 Run after adding / renaming / deleting a PDF or editing seed metadata:
 
@@ -36,7 +36,7 @@ each wrapped script remains independently runnable.
 | `Operation/scripts/audit_corpus_geometry.py` | Audit corpus geometry: detect stale paths, stale raw URLs, missing sidecars, and unmanifested (orphan) PDFs. `--check` fails on any non-OK entry. |
 | `Operation/scripts/check_readme_manifest_alignment.py` | Verify the README semantic reticulum table and `MANIFEST.json` stay mutually aligned (every canonical entry listed; no dangling ids). |
 | `Operation/scripts/manifest_common.py` | Shared helpers (repo root, canonical raw-URL builder, sha256, manifest loader) used by the corpus scripts. |
-| `Operation/scripts/test_build_manifest.py` | Unit tests for the manifest builder's normalization/resolution logic. |
+| `Operation/scripts/test_build_manifest.py` | Unit tests for the manifest builder's normalization/resolution logic. Run by `./repo-roa.sh` and the `validate-corpus.yml` CI gate. |
 
 `Operation/MANIFEST.json` is the **only** machine-canonical corpus-acquisition
 map (DEC-0007). Sidecars are generated output and must never be hand-edited.
@@ -63,7 +63,7 @@ map (DEC-0007). Sidecars are generated output and must never be hand-edited.
 | Workflow | Purpose | Mirrors |
 |---|---|---|
 | `.github/workflows/check-manifest.yml` | Run `check_manifest.py` + `build_manifest.py --check` on corpus-touching changes. | §2 |
-| `.github/workflows/validate-corpus.yml` | Run build-check + manifest validate + geometry audit + README/MANIFEST alignment on PRs (online variant on dispatch). | §2 |
+| `.github/workflows/validate-corpus.yml` | Run build-check + builder unit tests + manifest validate + geometry audit + README/MANIFEST alignment on PRs (online variant on dispatch). | §2 |
 | `.github/workflows/regenerate-corpus.yml` | On PDF changes to `main`, regenerate and commit manifest + sidecars (`[skip ci]`). | §2 |
 | `.github/workflows/ikant-incarnation.yml` | Run `incarnation_test.py` on agent-surface changes. | §3 |
 | `.github/workflows/ikant-runner.yml` | Run the dependency-free `Operation/runner/` integration tests (`node --test`) on runner/manifest/metaprompt changes. | §3 |
