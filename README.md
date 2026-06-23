@@ -217,8 +217,9 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── (2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf
 ├── (3) A-OSP Webapp Whitepaper [WP].pdf
 ├── (4) A-OSP Webapp Technical Due Diligence [TechDD].pdf
-├── (5) A-OSP Legal Operating Architecture Target [LOA].pdf
-├── (6) A-OSP Investment Pitch [INP].pdf
+├── (5) A-OSP Build Data Room {DR].pdf
+├── (6) A-OSP Legal Operating Architecture Target [LOA].pdf
+├── (7) A-OSP Investment Pitch [INP].pdf
 |
 |   ## SCIENTIFIC SPINE, METODOLOGY SCAFFOLDING/BACKLOG ##
 └──🗂️ Reticular Local Abstraction [RLA-CRC-ECNN]
