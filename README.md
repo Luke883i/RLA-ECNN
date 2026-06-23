@@ -226,6 +226,8 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
     ├── 📑 Slidedeck RLA-ECNN bridge PCE.pdf
     └── 📑 Annex A - G (RLA-CRC Foundations, Case Bryophyte, ECNN Formalisation, Epistemic LLM neuron ECU, RLA-ECNN bridge PCE)
 
+
+🗂️./github/workflow, 🗂️./Operation -> Repository maintenance support tool (to ignore)
 ```
 
 
