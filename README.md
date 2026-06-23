@@ -195,9 +195,9 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 
 ### Suggested reading pathways:
 ```text
-- CTOs, engineers, technical readers: (II) > (1) > (2) > (3) > (4)
-- Investors, backers, supporters, legals: (I) > (5)
-- Humanists, philosophers: (I) > (II) > (III) > RLA/CRC/ECNN Corpus > (1)
+- CTOs, engineers, technical readers: (II) > (1) > (2) > (3) > (4) > (6)
+- Investors, backers, supporters: (I) > (5) > (6)
+- Humanists, philosophers: (I) > (II) > (III) > RLA/CRC/ECNN Corpus > (1) > (2)
 ```
 
 
@@ -212,7 +212,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── (III) AI as Observer Compiler - From Wolfram's Ruliad to RLA-ECNN.pdf
 |  
 |   ## IMPLEMENTATION WITNESS - Enterprise Webapp candidate ##
-├── 🗂️ AUGMENTED ONTOLOGICAL SEMANTIC PLATFORM [A-OSP]
+├── 🗂️ Augmented Ontological Semantic Platform [A-OSP]
 ├── (1) A-OSP Value Propositions Brief View [VPB].pdf
 ├── (2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf
 ├── (3) A-OSP Webapp Whitepaper [WP].pdf
@@ -221,7 +221,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── (6) A-OSP Investment Pitch [INP].pdf
 |
 |   ## SCIENTIFIC SPINE, METODOLOGY SCAFFOLDING/BACKLOG ##
-└──🗂️ RLA-CRC-ECNN
+└──🗂️ Reticular Local Abstraction [RLA-CRC-ECNN]
     ├── 📑 Main Paper RLA-ECNN-CRC-PCE.pdf
     ├── 📑 Slidedeck RLA-ECNN bridge PCE.pdf
     └── 📑 Annex A - G (RLA-CRC Foundations, Case Bryophyte, ECNN Formalisation, Epistemic LLM neuron ECU, RLA-ECNN bridge PCE)
