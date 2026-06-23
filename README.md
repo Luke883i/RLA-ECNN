@@ -231,8 +231,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ```
 
 **Repository Video Evidence (codespace -> webapp bootstrap -> examples)**
-
-Video Evidence Repository: https://www.youtube.com/@Luke883i
+Channel: https://www.youtube.com/@Luke883i
 - (codespace) https://www.youtube.com/watch?v=zWfFFWvsDeo&t=83s
 - (bootstrap) https://www.youtube.com/watch?v=rRtwv72H_CU
 - (deterministic retrival examples) https://www.youtube.com/watch?v=ZwqtwDGZ3DM
