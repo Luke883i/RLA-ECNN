@@ -5,7 +5,7 @@ title: "(5) A-OSP Build Data Room [DR]"
 role: "implementation_data_room"
 source_path: "Augmented Ontological Semantic Platform A-OSP/(5) A-OSP Build Data Room [DR].pdf"
 source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%285%29%20A-OSP%20Build%20Data%20Room%20%5BDR%5D.pdf"
-source_sha256: "6f11cc928f0260c1667bc7196b1bd22156dfe6555258f9ea91e1577c19d322f7"
+source_sha256: "3224d5db711cfa97c4eea551bfd479662192093f20669f091385842568493688"
 extraction_status: "success"
 ---
 
@@ -19,6 +19,11 @@ own proof debt - and what funding closes.
 FACT_ -> INFER_ -> GAP_
 Scope: development process only - PR, issue, CI, ADR, entropy. Not product certification.
 Method: FACT measured - INFER deduced - GAP declared blind spot.
+SOT discipline:
+WP = architecture / claim-boundary source.
+TechDD = implementation posture source.
+DR = repository/process evidence snapshot.
+DR may add repository-backed facts, but must label them FACT / INFER / GAP and keep product-certification claims out of scope.
 Data Room 
 (DR)
 
@@ -65,6 +70,10 @@ repo consolidates itself; it does not grow features
 governance measures; it does not cure
 limit is convergence throughput, not awareness
 The value is not optimism. It is measured proof debt with owner, temperature and gate.
+Source discipline:
+61.57 / redline / critical / hot = generated entropy report.
+Contributor / PR / issue counts = GitHub snapshot at 191ff93.
+Backlog convergence % = INFER, not measured FACT.
 
 ## Page 5
 
@@ -190,18 +199,26 @@ The designed ceiling is ahead of the witnessed floor.
 The question is not whether the architecture exists. It is how fast the floor converges with the ceiling.
 A-OSP - Build Data Room - self-application evidence - snapshot 191ff93 - June 2026 13
 Witnessed in runtime
-entropy diagnostics - designed and running
-D1 / DataIntake proof - designed and wired
-real receipts on D1 seam
-mitigation lanes present and active
-this is the witnessed floor
+entropy diagnostics generated and owner-linked
+D1 proof route mounted
+D1ProofAppendService produces receipt/readback semantics
+d1_receipt_ persistence evidenced
+frontend proofAppendD1 client wired
+DataIntake consumer path evidenced
+C1 false-green membrane generated
+D1 attack-vector tests present
 Designed, not yet implemented
-agent-drift control (#3493) - spec only
-MONL engine (#3484) - full spec, facade redline
-D2-D5 / EQL / ArtifactWitness - open
-Error Truth envelope - partial / planned
-this is the designed ceiling
+EQL is HARDENING / OPEN:
+shared boundary and scope refusal exist,
+but EQLQueryReceipt, hashes, proof scripts, CI gates and 
+proof UX remain open
+D2-D5 receipts / PipelineReceipt remain open
+ArtifactWitness remains open
+GovernanceRun / Proof Spine remain open
+CI/CD topology normalization remains open
+MONL-TX remains redline / convergence target
 Funding closes the gap between coherent design and runtime proof, not a gap between no idea and idea.
+The floor has moved: D1/C1 are no longer only designed; EQL and downstream proof composition are the closure frontier.
 
 ## Page 13
 
@@ -294,14 +311,21 @@ AI Agent Pattern Contract
 PR-template-as-DoD
 branch protection + required checks
 Current maturity
-Stage 1: advisory.
-Measurements exist.
-They do not yet block all unsafe 
-progress.
+D1/C1 membrane: generated + tested 
+within declared scope
+Entropy / governance lanes:diagnostic
+and partly advisory
+CI/CD topology:instrumented, still 
+normalizing
+EQL / D2-D5 / ArtifactWitness:open
+convergence surfaces
 Target maturity
-Stage 2: soft gates.
-Stage 3: hard gates.
-Then external reproducibility.
+EQL proof closure in CIdownstream
+proof-consumer gates verifiedD2-D5 
+receiptsArtifactWitnessProof
+Spinezero unknown-owner 
+governance surfacesexternal
+reproducibility.
 The immune system exists; capital accelerates enforcement.
 
 ## Page 18
@@ -364,7 +388,10 @@ A-OSP - Build Data Room - self-application evidence - snapshot 191ff93 - June 20
 Constraint Current signal Funding response
 one human merge authority single reviewer / merger convergence lead + reviewer cell
 spec ahead of runtime designed ceiling > witnessed floor closure sprint
-hard gates off redline and critical would block too much staged soft-to-hard gating
+partial hard-gate maturity D1/C1 evidenced, but EQL/downstream/CI 
+topology not fully hard-gated
+staged hardening: EQL CI, downstream gates, 
+topology normalization
 EQL / D2-D5 open proof seam incomplete P0/P1 proof-seam team
 single snapshot no derivative yet recurring snapshot cadence
 The fundable bottleneck is not awareness. It is convergence capacity.
@@ -377,12 +404,15 @@ A 90-120 day closure sprint should convert measured debt into runtime proof capi
 A-OSP - Build Data Room - self-application evidence - snapshot 191ff93 - June 2026 23
 Current evidence Funded workstream Target
 entropy 61.57 critical entropy closure sprint warm/cold mean
-redline 2 false-green hardening redline 0
-#3493 spec/no files agent-drift detector live detector + counts
-EQL open seam proof seam team EQLQueryReceipt + negative tests
+redline 2 MONL / proof-path convergence redline 0
+C1 generated false-green evidence preserve + extend false-green membrane regenerated C1, bypass 0
+EQL HARDENING / OPEN proof seam team EQLQueryReceipt + hashes + proof CI
+D2-D5 / ArtifactWitness open downstream proof-chain team PhaseReceipt + ArtifactWitness
 one reviewer convergence cell founder-dependence reduced
+Funding buys convergence capacity: EQL closure, downstream proof composition, governance topology normalization 
+and team-operable review.
 4 churn samples repo-wide analytics aggregate churn median
-The ask is disciplined: close the measured proof gap, do not pretend the gap is already closed.
+CI/CD topology debt governance topology cleanup zero unknown-owner surfaces
 
 ## Page 23
 
@@ -418,9 +448,11 @@ ACT V - FINAL VERDICT
 Not healthy. Not failed. Governable.
 The correct reading is governed acceleration.
 A-OSP - Build Data Room - self-application evidence - snapshot 191ff93 - June 2026 26
-A-OSP's first proof object is not a polished product demo.
-It is an AI-assisted build that measured its own entropy, named its false-green risks, 
-assigned debt to owners, and exposed the exact convergence work funding must close.
+A
+-
+OSP's first proof object is not a polished product demo.
+It is an AI-assisted build that measured its own entropy, named its false-green risks, assigned 
+debt to owners, and exposed the exact convergence work funding must close.
 That is the investment reading: not optimism, not pessimism - governed acceleration.
 Fever
 not hidden
