@@ -205,15 +205,14 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ### Repository hierarchy
 
 ```text
-
-🗂️ ./root
-|   ## ENTRY POINT & DEEP DIVE ##
-├── (I) Every Map Leaves Something Out.pdf
+    ## SCIENTIFIC SPINE, HUMANISTIC ENTRY POINT AND DEEP DIVE ##
+┌── (I) Every Map Leaves Something Out.pdf  ⇐ ## ROA ENTRY POINT ## This documents introduces Reticular Observers Architectures (ROA)
 ├── (II) ROA - Reticular Observer Architectures for Governable AI-Assisted Work.pdf
 ├── (III) AI as Observer Compiler - From Wolfram's Ruliad to RLA-ECNN.pdf
 |  
-|   ## IMPLEMENTATION WITNESS - Enterprise Webapp candidate ##
+|   ## IMPLEMENTATION WITNESS - ENTERPRISE WEBAPP CANDIDATE ## (FOR CISO, INVESTOR,...)
 ├── 🗂️ Augmented Ontological Semantic Platform [A-OSP]
+├── (0) A-OSP The Ledger of Meaning [LOM].pptx          ⇐ ## A-OSP ENTRY POINT ## This documents tailors the documentation journey to the user's profile (CTO, investor...)
 ├── (1) A-OSP Value Propositions Brief View [VPB].pdf
 ├── (2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf
 ├── (3) A-OSP Webapp Whitepaper [WP].pdf
@@ -222,14 +221,14 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── (6) A-OSP Legal Operating Architecture Target [LOA].pdf
 ├── (7) A-OSP Investment Pitch [INP].pdf
 |
-|   ## SCIENTIFIC SPINE, METODOLOGY SCAFFOLDING/BACKLOG ##
+|   ## SCIENTIFIC BACKBONE, METODOLOGY SCAFFOLDING ##
 └──🗂️ Reticular Local Abstraction [RLA-CRC-ECNN]
     ├── 📑 Main Paper RLA-ECNN-CRC-PCE.pdf
     ├── 📑 Slidedeck RLA-ECNN bridge PCE.pdf
     └── 📑 Annex A - G (RLA-CRC Foundations, Case Bryophyte, ECNN Formalisation, Epistemic LLM neuron ECU, RLA-ECNN bridge PCE)
 
 
-🗂️./github/workflow, 🗂️./Operation -> Repository maintenance support tool (to ignore)
+🗂️./github/workflow, 🗂️./Operation ## REPOSITORY MAINTENANCE SUPPORT TOOL (TO IGNORE) ##
 ```
 
 **Repository Video Evidence (codespace -> webapp bootstrap -> examples)**
