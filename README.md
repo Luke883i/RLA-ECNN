@@ -204,12 +204,12 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 |  
 |   ## IMPLEMENTATION WITNESS - ENTERPRISE WEBAPP CANDIDATE ## (FOR CISO, INVESTOR,...)
 ├── 🗂️ Augmented Ontological Semantic Platform [A-OSP]
-├── (0) A-OSP The Ledger of Meaning [LOM].pdf    ⬅️ ## A-OSP ENTRY POINT ## This documents tailors the documentation journey to the user's profile (CTO, investor...)
+├── (0) A-OSP The Ledger of Meaning [LOM].pptx    ⬅️ ## A-OSP ENTRY POINT ## This documents tailors the documentation journey to the user's profile (CTO, investor...)
 ├── (1) A-OSP Value Propositions Brief View [VPB].pdf
 ├── (2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf
 ├── (3) A-OSP Webapp Whitepaper [WP].pdf
 ├── (4) A-OSP Webapp Technical Due Diligence [TechDD].pdf
-├── (5) A-OSP Build Data Room {DR].pdf
+├── (5) A-OSP Build Data Room [DR].pdf
 ├── (6) A-OSP Legal Operating Architecture Target [LOA].pdf
 ├── (7) A-OSP Investment Pitch [INP].pdf
 |
