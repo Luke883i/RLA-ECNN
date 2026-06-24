@@ -60,6 +60,7 @@ ALLOWED_ROLES = {
     "implementation_due_diligence",
     "implementation_proof_mechanics",
     "implementation_value_proposition",
+    "implementation_data_room",
     "legal_operating_architecture_target",
     "investment_pitch",
     "core_paper",

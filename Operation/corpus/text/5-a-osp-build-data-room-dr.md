@@ -2,7 +2,7 @@
 ---
 id: "5-a-osp-build-data-room-dr"
 title: "(5) A-OSP Build Data Room [DR]"
-role: "UNREVIEWED_AUTOSEEDED"
+role: "implementation_data_room"
 source_path: "Augmented Ontological Semantic Platform A-OSP/(5) A-OSP Build Data Room [DR].pdf"
 source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%285%29%20A-OSP%20Build%20Data%20Room%20%5BDR%5D.pdf"
 source_sha256: "6f11cc928f0260c1667bc7196b1bd22156dfe6555258f9ea91e1577c19d322f7"

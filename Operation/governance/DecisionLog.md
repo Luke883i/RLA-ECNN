@@ -243,3 +243,30 @@
 - **rollback:** Revert this commit; the gate is additive (reuses `validate_turn`)
   and carries no manifest/sidecar state, so no regeneration is required.
 - **export:** artifact_manifest
+
+---
+
+## DEC-0011 — Relocate governance orchestrator into `Operation/`
+
+- **date:** 2026-06-23
+- **decision:** Move the single governance orchestrator from the repo root
+  (`repo-roa.sh`) into the existing `Operation/` container as
+  `Operation/repo-roa.sh`, alongside the scripts, governance docs, runner, and
+  manifest it wraps. The script now anchors execution at the repository root
+  (the parent of `Operation/`) so every wrapped gate keeps addressing paths
+  relative to the repo root; behaviour, flags, and gate order are unchanged. Update
+  every reference (`.github/workflows/align-corpus.yml`, `README.md`,
+  `Operation/governance/GOVERNANCE_TOOLS.md`, `Operation/AGENTS.md`) to the new
+  path. Closes #30.
+- **rationale:** The orchestrator only addresses `Operation/...` surfaces and was
+  the last governance asset still living at the repo root, leaving the root and
+  the documented `Operation/` container out of alignment (DEC-0006 relocated the
+  manifest + scripts there). Consolidating it removes that residual drift so the
+  repository geometry matches the documentation in one place (minima spesa,
+  massima resa; antifragile loop per DEC-0007).
+- **artifacts:** `Operation/repo-roa.sh` (moved + re-anchored to repo root),
+  `.github/workflows/align-corpus.yml`, `README.md`,
+  `Operation/governance/GOVERNANCE_TOOLS.md`, `Operation/AGENTS.md`.
+- **rollback:** Revert this commit; `git mv Operation/repo-roa.sh repo-roa.sh`,
+  restore the prior `cd "$SCRIPT_DIR"` anchor and the old reference paths.
+- **export:** artifact_manifest

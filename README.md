@@ -94,8 +94,8 @@ node --test Operation/runner/test/*.test.js             # integration tests
 
 By default the runner resolves manifest URLs to local repository files
 (deterministic, offline); pass `--online` to fetch from
-`raw.githubusercontent.com`. `./repo-roa.sh --check` runs these runner tests when
-Node.js is available.
+`raw.githubusercontent.com`. `./Operation/repo-roa.sh --check` runs these runner
+tests when Node.js is available.
 
 ### Semantic reticulum navigation
 
@@ -118,6 +118,7 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 | `implementation_value_proposition` | `aosp-value-propositions` | `Operation/corpus/text/aosp-value-propositions.md` |
 | `legal_operating_architecture_target` | `aosp-legal-operating-architecture` | `Operation/corpus/text/aosp-legal-operating-architecture.md` |
 | `investment_pitch` | `aosp-investment-pitch` | `Operation/corpus/text/aosp-investment-pitch.md` |
+| `implementation_data_room` | `5-a-osp-build-data-room-dr` | `Operation/corpus/text/5-a-osp-build-data-room-dr.md` |
 | `core_paper` | `main-paper-rla-ecnn-crc-pce` | `Operation/corpus/text/main-paper-rla-ecnn-crc-pce.md` |
 | `slidedeck` | `slidedeck-rla-ecnn-pce-bridge` | `Operation/corpus/text/slidedeck-rla-ecnn-pce-bridge.md` |
 | `technical_annex` | `annex-a-rla-crc-foundations` | `Operation/corpus/text/annex-a-rla-crc-foundations.md` |
@@ -139,15 +140,15 @@ https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/{id}.m
 
 ### Corpus lifecycle
 
-`repo-roa.sh` is the single governance orchestrator: a thin, deterministic
-wrapper that runs every documentation-alignment gate in one command, keeping the
-PDFs, `Operation/MANIFEST.json`, the text sidecars, and this README mutually
-consistent.
+`Operation/repo-roa.sh` is the single governance orchestrator: a thin,
+deterministic wrapper that runs every documentation-alignment gate in one
+command, keeping the PDFs, `Operation/MANIFEST.json`, the text sidecars, and this
+README mutually consistent.
 
 ```bash
-./repo-roa.sh           # APPLY: regenerate MANIFEST.json + sidecars, then verify all gates
-./repo-roa.sh --check   # VERIFY (read-only): the exact contract CI enforces; fails on any drift
-./repo-roa.sh --help    # full flag list (--online, --no-install)
+./Operation/repo-roa.sh           # APPLY: regenerate MANIFEST.json + sidecars, then verify all gates
+./Operation/repo-roa.sh --check   # VERIFY (read-only): the exact contract CI enforces; fails on any drift
+./Operation/repo-roa.sh --help    # full flag list (--online, --no-install)
 ```
 
 Run it after adding, renaming, or deleting a PDF, or after editing seed
