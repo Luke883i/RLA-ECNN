@@ -198,13 +198,13 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 
 ```text
     ## SCIENTIFIC SPINE, HUMANISTIC ENTRY POINT AND DEEP DIVE ##
-┌── (I) Every Map Leaves Something Out.pdf  ⇐ ## ROA ENTRY POINT ## This documents introduces Reticular Observers Architectures (ROA)
+┌── (I) Every Map Leaves Something Out.pdf   ⬅️ ## ROA ENTRY POINT ## This documents introduces Reticular Observers Architectures (ROA)
 ├── (II) ROA - Reticular Observer Architectures for Governable AI-Assisted Work.pdf
 ├── (III) AI as Observer Compiler - From Wolfram's Ruliad to RLA-ECNN.pdf
 |  
 |   ## IMPLEMENTATION WITNESS - ENTERPRISE WEBAPP CANDIDATE ## (FOR CISO, INVESTOR,...)
 ├── 🗂️ Augmented Ontological Semantic Platform [A-OSP]
-├── (0) A-OSP The Ledger of Meaning [LOM].pptx          ⇐ ## A-OSP ENTRY POINT ## This documents tailors the documentation journey to the user's profile (CTO, investor...)
+├── (0) A-OSP The Ledger of Meaning [LOM].pdf    ⬅️ ## A-OSP ENTRY POINT ## This documents tailors the documentation journey to the user's profile (CTO, investor...)
 ├── (1) A-OSP Value Propositions Brief View [VPB].pdf
 ├── (2) A-OSP Core Idea Proof Mechanics Brief [CIPM].pdf
 ├── (3) A-OSP Webapp Whitepaper [WP].pdf
