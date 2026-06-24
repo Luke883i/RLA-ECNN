@@ -233,25 +233,25 @@
       "id": "aosp-legal-operating-architecture",
       "title": "Legal Operating Architecture Target",
       "role": "legal_operating_architecture_target",
-      "path": "Augmented Ontological Semantic Platform A-OSP/(7) A-OSP Legal Operating Architecture Target [LOA].pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%287%29%20A-OSP%20Legal%20Operating%20Architecture%20Target%20%5BLOA%5D.pdf",
+      "path": "Augmented Ontological Semantic Platform A-OSP/(6) A-OSP Legal Operating Architecture Target [LOA].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%286%29%20A-OSP%20Legal%20Operating%20Architecture%20Target%20%5BLOA%5D.pdf",
       "canonical": true,
       "size_bytes": 358452,
       "sha256": "41b280f01f6d97501aa75e40b5a73d56139466cef2cd62d62daf3ac4a1d96c65",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-legal-operating-architecture.md",
-      "text_sha256": "965e54269e352761c783599b1f94312689b5fc79162f2e55de33d4c61ca94577"
+      "text_sha256": "ffdefedf75be1ab8c9a5b1b4dba7d3ddc3eaeb4f8b46ca59f1f266d7cdda89c7"
     },
     {
       "id": "aosp-investment-pitch",
       "title": "A-OSP Investment Pitch",
       "role": "investment_pitch",
-      "path": "Augmented Ontological Semantic Platform A-OSP/(6) A-OSP Investment Pitch [INP].pdf",
-      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%286%29%20A-OSP%20Investment%20Pitch%20%5BINP%5D.pdf",
+      "path": "Augmented Ontological Semantic Platform A-OSP/(7) A-OSP Investment Pitch [INP].pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%287%29%20A-OSP%20Investment%20Pitch%20%5BINP%5D.pdf",
       "canonical": true,
       "size_bytes": 1104372,
       "sha256": "ebdd802c28051be77b7e6168b4a5f83e1ba9d9cecd4035954b039779f8a6d409",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/aosp-investment-pitch.md",
-      "text_sha256": "48c349842187e6f20e762db08fa1afc12c02d10a441e21af2f80a02e24e608b4"
+      "text_sha256": "179a86ed186c669b636511859307813876d6e6cfdf446e8591b06e345eb0bffe"
     },
     {
       "id": "5-a-osp-build-data-room-dr",

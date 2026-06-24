@@ -3,8 +3,8 @@
 id: "aosp-investment-pitch"
 title: "A-OSP Investment Pitch"
 role: "investment_pitch"
-source_path: "Augmented Ontological Semantic Platform A-OSP/(6) A-OSP Investment Pitch [INP].pdf"
-source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%286%29%20A-OSP%20Investment%20Pitch%20%5BINP%5D.pdf"
+source_path: "Augmented Ontological Semantic Platform A-OSP/(7) A-OSP Investment Pitch [INP].pdf"
+source_raw_url: "https://raw.githubusercontent.com/Luke883i/ROA/main/Augmented%20Ontological%20Semantic%20Platform%20A-OSP/%287%29%20A-OSP%20Investment%20Pitch%20%5BINP%5D.pdf"
 source_sha256: "ebdd802c28051be77b7e6168b4a5f83e1ba9d9cecd4035954b039779f8a6d409"
 extraction_status: "success"
 ---
