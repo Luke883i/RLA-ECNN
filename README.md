@@ -202,7 +202,7 @@ The corpus is programmatic and criticisable. It does **not** claim completed mat
 ├── (II) ROA - Reticular Observer Architectures for Governable AI-Assisted Work.pdf
 ├── (III) AI as Observer Compiler - From Wolfram's Ruliad to RLA-ECNN.pdf
 |  
-|   ## IMPLEMENTATION WITNESS - ENTERPRISE WEBAPP CANDIDATE ## (FOR CISO, INVESTOR,...)
+|   ## IMPLEMENTATION WITNESS - ENTERPRISE WEBAPP CANDIDATE ## (FOR CTO, INVESTOR,...)
 ├── 🗂️ Augmented Ontological Semantic Platform [A-OSP]
 ├── (0) A-OSP The Ledger of Meaning [LOM].pdf    ⬅️ ## A-OSP ENTRY POINT ## This documents tailors the documentation journey to the user's profile (CTO, investor...)
 ├── (1) A-OSP Value Propositions Brief View [VPB].pdf
