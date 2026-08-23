@@ -264,6 +264,30 @@
       "sha256": "3224d5db711cfa97c4eea551bfd479662192093f20669f091385842568493688",
       "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/5-a-osp-build-data-room-dr.md",
       "text_sha256": "0359d6081bfc652ee8f656d57b6751d2749b19fb91bf1b3eb1f0ce7c4dcbc3de"
+    },
+    {
+      "id": "iv-computational-semantics-of-claim-admissibility",
+      "title": "(IV) Computational Semantics of Claim Admissibility",
+      "role": "UNREVIEWED_AUTOSEEDED",
+      "path": "(IV) Computational Semantics of Claim Admissibility.pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/%28IV%29%20Computational%20Semantics%20of%20Claim%20Admissibility.pdf",
+      "canonical": true,
+      "size_bytes": 761363,
+      "sha256": "deae9b91c9cb5d8f5c5b5793e33b116938674242f4dddfa7484da4d635cf5199",
+      "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/iv-computational-semantics-of-claim-admissibility.md",
+      "text_sha256": "fc2c1a387ca3f1d7686d0d84d41c6f2fb8f34a36d5dfe2920afc053b82cfafce"
+    },
+    {
+      "id": "v-epistemi-debt-the-accounting-layer-of-computational-semantics",
+      "title": "(V) Epistemi Debt - The Accounting Layer of Computational Semantics",
+      "role": "UNREVIEWED_AUTOSEEDED",
+      "path": "(V) Epistemi Debt - The Accounting Layer of Computational Semantics.pdf",
+      "raw_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/%28V%29%20Epistemi%20Debt%20-%20The%20Accounting%20Layer%20of%20Computational%20Semantics.pdf",
+      "canonical": true,
+      "size_bytes": 2514853,
+      "sha256": "99e77a8263fc2c0b7e1c1b62e55380bbd6193fb2fa56de098cccf1f9e70248a2",
+      "text_url": "https://raw.githubusercontent.com/Luke883i/ROA/main/Operation/corpus/text/v-epistemi-debt-the-accounting-layer-of-computational-semantics.md",
+      "text_sha256": "f86f9318c4d7dae470817b1884545a6870318a67738a6df278457611ad3218f7"
     }
   ]
 }
