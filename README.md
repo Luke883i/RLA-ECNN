@@ -38,7 +38,9 @@ Its aim is to make AI-assisted work horizon-relative, falsifiable, debt-aware, r
 ├── (I) Every Map Leaves Something Out.pdf
 ├── (II) ROA - Reticular Observer Architectures for Governable AI-Assisted Work.pdf
 ├── (III) AI as Observer Compiler - From Wolfram's Ruliad to RLA-ECNN.pdf
-│
+├── (IV) Computational Semantics of Claim Admissibility.pdf
+├── (V) Epistemic Debt - The Accounting Layer of Computational Semantics.pdf
+|
 │   ## IMPLEMENTATION WITNESS - ENTERPRISE WEBAPP CANDIDATE ##
 ├── Augmented Ontological Semantic Platform [A-OSP]
 │   ├── (0) A-OSP The Ledger of Meaning [LOM].pdf
