@@ -1,0 +1,36 @@
+{
+  "schema": "roa-semantic-mutation-receipt/v2",
+  "method": "exhaustive 20-bit architecture mutation with hard invariants and UX/burden score",
+  "mutations": 1048576,
+  "killed": 1048504,
+  "survived": 72,
+  "kill_rate": 0.9999313354492188,
+  "best_genome_hex": "0x55555",
+  "best_score": 10.6,
+  "best_features": [
+    "active_session_receipt",
+    "curation_overlay",
+    "source_drift_explicit",
+    "vector_edge_weights",
+    "component_debt",
+    "pce_optional_lateral",
+    "witness_only_boundaries",
+    "typed_nonanswer_terminals",
+    "progressive_disclosure",
+    "lazy_named_use_gate"
+  ],
+  "failure_counts": {
+    "continuity-not-exactly-one": 524288,
+    "curation-not-exactly-one": 524288,
+    "source-drift-unsafe": 786432,
+    "truth-like-scalar-weight": 524288,
+    "debt-collapse": 786432,
+    "pce-overclaim": 786432,
+    "witness-overclaim": 786432,
+    "forced-answer": 786432,
+    "no-human-renderer": 262144,
+    "no-use-action-boundary": 262144
+  },
+  "trace_sha256": "588887faaef3c6303f79af46056978e4d2a000a4843771a5fc6890e18ed2c387",
+  "interpretation": "synthetic architecture falsification only; not scientific or empirical validation"
+}

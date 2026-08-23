@@ -1,0 +1,30 @@
+{
+  "schema": "roa-semantic-curation/v1",
+  "status": "CANDIDATE_REVIEW_REQUIRED",
+  "authority_model": {
+    "manifest": "acquisition and integrity only",
+    "curation_registry": "semantic routing metadata only",
+    "model_generated_metadata_authority": 0.0,
+    "merge_effect": "human review may promote candidate curation; merge alone does not establish scientific validation"
+  },
+  "entries": [
+    {
+      "manifest_id": "iv-computational-semantics-of-claim-admissibility",
+      "semantic_role": "claim_admissibility",
+      "display_title": "Computational Semantics of Claim Admissibility",
+      "curation_state": "CANDIDATE_REVIEW_REQUIRED",
+      "authority": 0.0,
+      "routing_tags": ["claim-state", "typed-terminal", "named-use", "action-certificate", "bounded-observer"],
+      "debt": ["semantic-role-human-review"]
+    },
+    {
+      "manifest_id": "v-epistemi-debt-the-accounting-layer-of-computational-semantics",
+      "semantic_role": "epistemic_debt_accounting",
+      "display_title": "Epistemic Debt — The Accounting Layer of Computational Semantics",
+      "curation_state": "CANDIDATE_REVIEW_REQUIRED",
+      "authority": 0.0,
+      "routing_tags": ["epistemic-debt", "warrant", "propagation", "non-laundering", "use-gate"],
+      "debt": ["semantic-role-human-review"]
+    }
+  ]
+}
